@@ -14,16 +14,16 @@ export default class Team extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
-                        <li className="nav-item activeNavLanding">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/">Home
                         <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item activeNav">
                                 <Link className="nav-link" to="/team">Team</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
+                                <a className="nav-link" href="#">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -157,33 +157,39 @@ export default class Team extends Component {
                         <div className="col-md-12 text-center">
                             <h3>Jadwal dan Hasil pertandingan</h3>
                         </div>
-                        <div className="col-md-6" style={{margin : '0 auto'}}>
+                        <div className="col-md-6" style={{ margin: '0 auto' }}>
                             <table className="table table-border pertandingan">
-                                <tr>
-                                    <td>Tim A</td>
-                                    <td>1</td>
-                                    <td>-</td>
-                                    <td>0</td>
-                                    <td>Tim B</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Tim A</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>Tim B</td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <table className="table table-border pertandingan">
-                                <tr>
-                                    <td>Tim A</td>
-                                    <td>1</td>
-                                    <td>-</td>
-                                    <td>0</td>
-                                    <td>Tim B</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Tim A</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>Tim B</td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <table className="table table-border pertandingan">
-                                <tr>
-                                    <td>Tim A</td>
-                                    <td>1</td>
-                                    <td>-</td>
-                                    <td>0</td>
-                                    <td>Tim B</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Tim A</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>Tim B</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
