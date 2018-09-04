@@ -1,0 +1,47 @@
+nav.team {
+    background-color: orange;
+}
+
+nav.team a {
+    background: -webkit-linear-gradient( 0deg, rgb(255, 255, 255) 0%, rgba(2255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.activeNav {
+    border-bottom: 2px solid white;
+}
+
+.table-grup {
+    margin-top: 50px;
+}
+
+.table-grup .col-md-12 {
+    margin-bottom: 50px;
+}
+
+.putra {
+    margin-top: 24px;
+}
+
+.putra thead {
+    background-color: #081f2c;
+}
+
+.putra thead tr td {
+    color: white;
+    font-weight: 600;
+}
+
+.match {
+    margin-top: 150px;
+}
+
+.match .col-md-12 {
+    margin-bottom: 50px;
+}
+
+.pertandingan tr {
+    border: 1px solid #dee2e6;
+}
