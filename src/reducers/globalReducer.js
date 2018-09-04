@@ -1,6 +1,6 @@
 
 const initialState = {
-    isLogedIn : true,
+    isLogedIn : false,
 }
 
 export default (state = initialState, action) => {

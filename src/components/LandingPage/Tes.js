@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 class Tes extends Component {
   render() {
@@ -15,4 +16,4 @@ const mapStateToProps = (state) => ({
     isLogedIn: state.global.isLogedIn
 })
 
-export default connect(mapStateToProps)(Tes)
+export default withRouter(connect(mapStateToProps)(Tes))
