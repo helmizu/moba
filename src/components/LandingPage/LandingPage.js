@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light landing">
-                    <a className="navbar-brand" href="#">Moba Cup</a>
+                    <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%"/></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -74,13 +74,10 @@ export default class LandingPage extends Component {
                                     <h4>THE GOLDEN HOPE</h4>
                                 </div>
                                 <div className="paragraf">
-                                    <p>
-                                        SMK Tekom Malang merupakan salah satu SMK yang berbasis IT. Penting untuk diketahui, siswa SMK Telkom Malang banyak berasal dari luar Kota Malang. Mereka tak hanya berasal dari SMP/MTs lingkup Jawa Timur, tetapi juga dari seluruh penjuru Indonesia. Kemampuan akademik dan non-akademik  merupakan hal yang harus seimbang untuk menjadi penunjang kesuksesan siswa-siswi di SMK Telkom Malang.
-                                    </p>
-                                    <p>
-                                        Dalam penyaluran bakat siswa-siswi di bidang olahraga khususnya bolabasket, SMK Telkom turut berpartisipasi untuk mengadakan kompetisi bolabasket antar SMP/MTs sederajat dengan nama MOBA CUP (Moklet Basketball Cup). MOBA CUP pertama kali diadakan pada tahun 2017 dan telah diikuti oleh 20 tim yang tersebar di 6 kota di Jawa Timur diantaranya kota Lumajang, Pasuruan, Kabupaten Malang, Kota Malang, Blitar dan Tulungagung. Untuk melanjutkan kegiatan tersebut, kini SMK Telkom Malang merealisasikan sebuah turnamen bolabasket bernama MOBA CUP 2018 “The Golden Hope” untuk siswa-siswi tingkat SMP/MTs/sederajat di Provinsi Jawa Timur. Melalui turnamen ini, diharapkan seluruh siswa  tingkat SMP/MTs/sederajat di Provinsi Jawa Timur dapat ikut serta secara aktif menyalurkan bakat mereka di bidang olahraga, yaitu bolabasket. Nantinya, para peserta turnamen ini akan direkomendasikan agar dapat bergabung untuk melanjutkan studi dan menjadi anggota keluarga Wikusama (ikatan alumni SMK Telkom Malang) untuk meneruskan ukiran prestasi berikutnya
-                                    </p>
 
+                                    <p>Dalam penyaluran bakat siswa-siswi di bidang olahraga khususnya bolabasket, SMK Telkom turut berpartisipasi untuk mengadakan kompetisi bolabasket antar SMP/MTs sederajat dengan nama MOBA CUP (Moklet Basketball Cup). MOBA CUP pertama kali diadakan pada tahun 2017 dan telah diikuti oleh 20 tim yang tersebar di 6 kota di Jawa Timur diantaranya kota Lumajang, Pasuruan, Kabupaten Malang, Kota Malang, Blitar dan Tulungagung.</p>
+                                <p> Untuk melanjutkan kegiatan tersebut, kini SMK Telkom Malang merealisasikan sebuah turnamen bolabasket bernama MOBA CUP 2018 “The Golden Hope” untuk siswa-siswi tingkat SMP/MTs/sederajat di Provinsi Jawa Timur. Melalui turnamen ini, diharapkan seluruh siswa  tingkat SMP/MTs/sederajat di Provinsi Jawa Timur dapat ikut serta secara aktif menyalurkan bakat mereka di bidang olahraga, yaitu bolabasket. Nantinya, para peserta turnamen ini akan direkomendasikan agar dapat bergabung untuk melanjutkan studi dan menjadi anggota keluarga Wikusama (ikatan alumni SMK Telkom Malang) untuk meneruskan ukiran prestasi berikutnya
+                                    </p>
                                 </div>
                             </div>
                         </div>

@@ -27,6 +27,10 @@ nav.landing a {
     border-bottom: 2px solid #f6d365;
 }
 
+.navbar {
+    padding: 0 1rem;
+}
+
 /* POV */
 .bg-video {
     width: 100%;
