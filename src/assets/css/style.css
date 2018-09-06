@@ -251,7 +251,7 @@ nav.landing a {
     border-radius: 50%;
     font-size: 30px;
     line-height: 40px;
-    margin-left: 120px;
+    margin-left: 76%;
     margin-top: 25px;
 }
 
@@ -264,7 +264,7 @@ nav.landing a {
     position: absolute;
     top: 0;
     right: auto;
-    left: 133px;
+    left: 25%;
     height: 85%;
     width: 4px;
     background: #fadd23;
@@ -650,42 +650,46 @@ bottom .register {
 .navbar-brand{
     padding: 0;
 }
-@media (min-width: 320px) and (max-width: 424px) {
-    .navbar-collapse{
-        display: block;
-    }
 
-    .navbar-brand{
-        width: 40%;
-        float: left;
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+    padding: 4px 0;
+    font-size: 16px;
+    margin: 4px 4px;
+}
+
+.navbar{
+    padding: 4px 16px;
+}
+
+.navbar-brand {
+    width: 40%
+}
+
+.navbar-brand img {
+    width: 30%
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .timeline::before {
+        left: 17%;
     }
-    .navbar-brand img{
-        width: 60%;
+    .timeline_item_icon {
+        margin-left: 46%;
     }
-    .navbar-collapse {
-        display: block;
-        float: left;
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 0;
-        /* -webkit-box-flex: 1; */
-        -ms-flex-positive: 1;
-        /* flex-grow: 1; */
-        /* -webkit-box-align: center; */
-        -ms-flex-align: center;
-        align-items: center;
-        width: 52%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .navbar-nav .nav-link {
+    padding: 4px 0;
+    font-size: 14px;
     }
-    .navbar-nav {
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-    .navbar-collapse ul{
-        width: 100%;
-    }
-    .navbar-collapse ul li{
-        float: left;
-        font-size: 14px;
-        margin-right: 16px;
+    
+    .navbar-brand img {
+        width: 60%
     }
 
     .video-gambar {
@@ -759,10 +763,10 @@ bottom .register {
         margin-top: 36px;
     }
     .timeline::before {
-        left: 143px;
+        left: 50%;
     }
     .timeline_item_icon {
-        margin-left: 130px;
+        margin-left: 46%;
     }
     .timeline_single{
         margin-top: 16px;

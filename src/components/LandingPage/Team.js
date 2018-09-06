@@ -8,11 +8,6 @@ export default class Team extends Component {
             <div>
                 <nav className="navbar navbar-expand-lg navbar team">
                     <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%"/></a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <Link className="nav-link" to="/">Home
@@ -23,10 +18,9 @@ export default class Team extends Component {
                                 <Link className="nav-link" to="/team">Team</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Login</a>
+                                <a className="nav-link" href="/login">Login</a>
                             </li>
                         </ul>
-                    </div>
                 </nav>
 
                 <div className="container-fluid">

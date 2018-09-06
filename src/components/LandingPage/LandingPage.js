@@ -21,7 +21,6 @@ export default class LandingPage extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light landing">
                     <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%" /></a>
                     
-                    <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item activeNavLanding">
                                 <Link className="nav-link" to="/">Home
@@ -35,7 +34,6 @@ export default class LandingPage extends Component {
                                 <Link className="nav-link" to="/login">Login</Link>
                             </li>
                         </ul>
-                    </div>
                 </nav>
 
                 <div className="bg-video">
