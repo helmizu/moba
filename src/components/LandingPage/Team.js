@@ -1,27 +1,12 @@
 import React, { Component } from 'react'
 import '../../assets/css/group.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Navbar from '../Dashboard/Navbar';
 
 export default class Team extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar team">
-                    <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%"/></a>
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Home
-                        <span className="sr-only">(current)</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item activeNavLanding">
-                                <Link className="nav-link" to="/team">Team</Link>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/login">Login</a>
-                            </li>
-                        </ul>
-                </nav>
+                < Navbar />
 
                 <div className="container-fluid">
                     <div className="row table-grup">

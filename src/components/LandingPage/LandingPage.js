@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../../assets/css/owl.carousel.min.css'
 import '../../assets/css/owl.theme.default.min.css'
 import '../../assets/css/style.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -13,16 +13,15 @@ export default class LandingPage extends Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1
           };
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light landing">
-                    <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%" /></a>
-                    
+                    <Link className="navbar-brand" to="/"><img src={require("../../assets/img/ts-2.png")} width="15%" /></Link>   
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item activeNavLanding">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/">Home
                         <span className="sr-only">(current)</span>
                                 </Link>
@@ -60,7 +59,7 @@ export default class LandingPage extends Component {
                         </div>
                         <div className="row justify-content-md-center">
                             <div className="col-md-12 text-center">
-                                <button href="#" className="btn btn-daftar text-light">Daftar</button>
+                                <Link to="/daftar" className="btn btn-daftar text-light">Daftar</Link>
                             </div>
                         </div>
                     </div>
@@ -491,7 +490,6 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                 <div className="footer-sekolah text-center">
                                     <h5>SMK TELKOM MALANG</h5>
                                     <h6>Jl. Danau Ranau No.1 Malang</h6>
-                                    <a href="">View On Map</a>
                                 </div>
                                 <div className="footer-telepon text-center">
                                     <h5>0341-72500</h5>
