@@ -482,6 +482,21 @@ nav.landing a {
 .modal-body .white-box{
     margin-bottom: 0;
 }
+.comment-title span{
+    text-align: right;
+    padding-left: 12px;
+    padding-bottom: 0px;
+    padding-top: 4px;
+    margin-top: -10px;
+    float: right;
+}
+.wrapper-syarat{
+    width: 80%;
+    min-height: 300px;
+    background-color: #fff;
+    border : 1px dashed #b7b7b7;
+    margin: 0 auto;
+}
 
 @media (min-width: 320px) and (max-width: 424px) {
     .video-gambar {
