@@ -434,6 +434,161 @@ nav.landing a {
     margin-top: 50px;
 }
 
+/* Daftar */
+.form-group {
+    margin-top: 28px;
+}
+
+input[type=text] {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    outline: none;
+    padding: 8px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.label-tag {
+    padding-left: 16px;
+    font-size: 14px;
+    color: #35506C;
+    font-weight: 300;
+}
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    color: #35506C;
+    font-weight: 300;
+}
+
+.bg-grey {
+    background-color: #E9E9F1;
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+.box-daftar {
+    width: 536px;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 88px;
+}
+
+.box-daftar h1 {
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #3D3F41;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-daftar h1::after {
+    content: "";
+    width: 75px;
+    height: 1px;
+    background-color: #F47E00;
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.box-daftar p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #3D3F41;
+}
+
+.required {
+    color: #F47E00;
+}
+
+.btn-oren {
+    width: 109px;
+    background-color: #F47E00;
+    color: white !important;
+}
+.button {
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.btn-oren:hover {
+    background-color: #F47E00 !important;
+    color: white !important;
+}
+.btn-masuk,.btn-daftar {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.container-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.bottom a {
+    margin-top: 28px;
+    color: #F47E00;
+    font-weight: 600;
+    float: right;
+}
+bottom .register {
+    text-align: right;
+    float: right;
+    margin-top: 0px!important;
+}
+.input-group select{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    background-color: transparent;
+    outline: none;
+    padding: 8px;
+}
+
 /* tambahan */
 .navbar-dashboard{
     padding: 0 !important;
