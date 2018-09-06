@@ -502,6 +502,9 @@ nav.landing a {
     padding-top: 8px;
 }
 
+.navbar-brand{
+    padding: 0;
+}
 @media (min-width: 320px) and (max-width: 424px) {
     .video-gambar {
         text-align: center;
