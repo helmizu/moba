@@ -9,6 +9,7 @@ import Tes from './components/LandingPage/Tes'
 import Dashboard from './components/Dashboard/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 import Daftar from './components/Daftar/Daftar';
+import Login from './components/Login/Login';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/team" component={Team} />
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/daftar" component={Daftar} />
+            <Route path="/login" component={Login} />
             <PrivateRoute path="/tes" component={Tes} />
           </div>
         </Router>

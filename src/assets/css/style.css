@@ -500,16 +500,6 @@ input[type=text] {
     margin-bottom: 0;
 }
 
-.box-daftar h1::after {
-    content: "";
-    width: 75px;
-    height: 1px;
-    background-color: #F47E00;
-    display: block;
-    margin: 0 auto;
-    margin-top: 12px;
-}
-
 .box-daftar p {
     margin-top: 20px;
     font-size: 14px;
@@ -535,7 +525,7 @@ input[type=text] {
     background-color: #F47E00 !important;
     color: white !important;
 }
-.btn-masuk,.btn-daftar {
+.btn-masuk{
     width: 100%;
     padding: 14px;
     font-size: 18px;

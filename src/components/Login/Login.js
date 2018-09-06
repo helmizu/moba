@@ -7,7 +7,7 @@ class Daftar extends Component {
     render() {
         return (
             <div>
-                
+
                 <nav className="navbar navbar-expand-lg navbar team">
                     <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%" /></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -25,7 +25,7 @@ class Daftar extends Component {
                                 <Link className="nav-link" to="/team">Team</Link>
                             </li>
                             <li className="nav-item activeNavLanding">
-                                <Link className="nav-link" to="/login">Login</Link>
+                                <a className="nav-link" href="#">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -36,7 +36,7 @@ class Daftar extends Component {
                         <div class="row">
                             <div class="col-md-12 centered">
                                 <div class="box-daftar">
-                                    <h1>DAFTAR</h1>
+                                    <h1>MASUK</h1>
                                     <p>Isi data kamu di bawah dengan lengkap dan mulai belajar bahasa pemrograman standar industri serta penyaluran kerja langsung bersama Arkademy.
                                 </p>
                                     <div class="form-group">
@@ -53,39 +53,11 @@ class Daftar extends Component {
                                                 </label>
                                                 <input required type="text" id="password" />
                                             </div>
-                                            <div class="input-group">
-                                                <label htmlFor="konfirmasi" class="label-tag">Konfirmasi Password
-                                    <span class="required">*</span>
-                                                </label>
-                                                <input required type="text" id="konfirmasi" />
-                                            </div>
-                                            <div class="input-group">
-                                                <label htmlFor="nama sekolah" class="label-tag">Nama Sekolah
-                                    <span class="required">*</span>
-                                                </label>
-                                                <input required type="text" id="sekolah" />
-                                            </div>
-                                            <div class="input-group">
-                                                <label htmlFor="sekolah" class="label-tag">No. Handphone
-                                    <span class="required">*</span>
-                                                </label>
-                                                <input required type="text" id="hp" />
-                                            </div>
-                                            <div class="input-group">
-                                                <label htmlFor="no" class="label-tag">Kategori
-                                    <span class="required">*</span>
-                                                </label>
-                                                <select required name="kategori">
-                                                    <option></option>
-                                                    <option value="putra">Tim Putra</option>
-                                                    <option value="putri">Tim Putri</option>
-                                                </select>
-                                            </div>
-                                            <button class="button btn-oren btn-masuk">Daftar</button>
+                                            <button class="button btn-oren btn-masuk">Masuk</button>
                                         </form>
                                     </div>
                                     <div class="bottom">
-                                        <Link to='/login' class="register hidden-xs">Sudah punya akun?</Link>
+                                        <Link to='/daftar' class="register hidden-xs">Tidak punya akun?</Link>
                                     </div>
                                 </div>
                             </div>
