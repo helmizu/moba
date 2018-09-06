@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
-            <div id="myModal" class={this.props.modalOpen === true ? 'modal fade in block' : 'modal fade'}>
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button onClick={this.props.modalToggle} type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Data {this.props.namaForm}</h4>
+            <div id="myModal" className={this.props.modalOpen === true ? 'modal fade in block' : 'modal fade'}>
+                <div className="modal-dialog modal-lg">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button onClick={this.props.modalToggle} type="button" className="close" data-dismiss="modal">&times;</button>
+                            <h4 className="modal-title">Data {this.props.namaForm}</h4>
                         </div>
-                        <form class="form-horizontal form-material">
-                            <div class="modal-body">
+                        <form className="form-horizontal form-material">
+                            <div className="modal-body">
 
-                                <div class="white-box">
-                                    <div class="form-group row">
-                                        <label class="col-md-3">Nama Lengkap</label>
-                                        <div class="col-md-9">
-                                            <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line" />
+                                <div className="white-box">
+                                    <div className="form-group row">
+                                        <label className="col-md-3">Nama Lengkap</label>
+                                        <div className="col-md-9">
+                                            <input type="text" placeholder="Johnathan Doe" className="form-control form-control-line" />
                                         </div>
                                     </div>
                                     <div className="form-group row">
@@ -58,10 +54,10 @@ class Form extends Component {
 
                             </div>
                             <div className="modal-footer">
-                                <div class="form-group">
-                                    <div class="col-sm-12">
-                                        <input type="submit" class="btn btn-success right left-8" value="Submit Data" />
-                                        <button type="button" onClick={this.props.modalToggle} class="btn btn-default right">Close</button>
+                                <div className="form-group">
+                                    <div className="col-sm-12">
+                                        <input type="submit" className="btn btn-success right left-8" value="Submit Data" />
+                                        <button type="button" onClick={this.props.modalToggle} className="btn btn-default right">Close</button>
                                     </div>
                                 </div>
                             </div>

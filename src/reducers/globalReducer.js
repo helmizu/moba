@@ -1,7 +1,7 @@
 import { SET_CURRENT_USER, GET_ERRORS, IS_LOGGED_IN } from "../config/types";
 
 const initialState = {
-    isLogedIn : false,
+    isLogedIn : true,
     user : {},
     errors : {}
 }

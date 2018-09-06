@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import '../../assets/css/owl.carousel.min.css'
+import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 import '../../assets/css/style.css'
-import Navbar from '../Dashboard/Navbar';
+import Navbar from '../Dashboard/Navbar'
 
 class Daftar extends Component {
     render() {
@@ -12,31 +11,31 @@ class Daftar extends Component {
                 < Navbar />
 
                 <div className="bg-grey">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 centered">
-                                <div class="box-daftar">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12 centered">
+                                <div className="box-daftar">
                                     <h1>MASUK</h1>
                                     <p>Isi data kamu di bawah dengan lengkap.</p>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <form action="">
-                                            <div class="input-group">
-                                                <label htmlFor="email" class="label-tag">Email
-                                    <span class="required">*</span>
+                                            <div className="input-group">
+                                                <label htmlFor="email" className="label-tag">Email
+                                    <span className="required">*</span>
                                                 </label>
                                                 <input required type="text" id="email" />
                                             </div>
-                                            <div class="input-group">
-                                                <label htmlFor="password" class="label-tag">Password
-                                    <span class="required">*</span>
+                                            <div className="input-group">
+                                                <label htmlFor="password" className="label-tag">Password
+                                    <span className="required">*</span>
                                                 </label>
                                                 <input required type="text" id="password" />
                                             </div>
-                                            <button class="button btn-oren btn-masuk">Masuk</button>
+                                            <button className="button btn-oren btn-masuk">Masuk</button>
                                         </form>
                                     </div>
-                                    <div class="bottom">
-                                        <Link to='/daftar' class="register hidden-xs">Tidak punya akun?</Link>
+                                    <div className="bottom">
+                                        <Link to='/daftar' className="register hidden-xs">Tidak punya akun?</Link>
                                     </div>
                                 </div>
                             </div>

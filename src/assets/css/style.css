@@ -367,23 +367,6 @@ nav.landing a {
     font-size: 12px;
 }
 
-.owl-theme .owl-nav {
-    margin-top: 10px;
-    display: none;
-}
-
-.owl-theme .owl-dots,
-.owl-theme .owl-nav {
-    text-align: center;
-    margin-top: 50px;
-    -webkit-tap-highlight-color: #ffffff00;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-    background: #2196f3;
-    width: 50px;
-}
-
 /* Section 4 */
 /* Section 5 */
 .section5 {
@@ -699,12 +682,20 @@ bottom .register {
     transition: 0.5s;
     background-size: 200% auto;
 }
+
+.slick-next {
+    right: 0px !important;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .timeline::before {
         left: 17%;
     }
     .timeline_item_icon {
         margin-left: 46%;
+    }
+    .box-daftar{
+        width: 70%;
     }
 }
 
@@ -800,5 +791,9 @@ bottom .register {
     }
     .timeline_single{
         margin-top: 16px;
+    }
+
+    .box-daftar{
+        width: 100%;
     }
 }

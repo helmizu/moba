@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import '../../assets/css/owl.carousel.min.css'
-import '../../assets/css/owl.theme.default.min.css'
 import '../../assets/css/style.css'
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -19,7 +17,7 @@ export default class LandingPage extends Component {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light landing">
-                    <Link className="navbar-brand" to="/"><img src={require("../../assets/img/ts-2.png")} width="15%" /></Link>   
+                    <Link className="navbar-brand" to="/"><img src={require("../../assets/img/ts-2.png")} width="15%" alt="telkom school" /></Link>   
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <Link className="nav-link" to="/">Home
@@ -44,7 +42,7 @@ export default class LandingPage extends Component {
                     <div className="container">
                         <div className="row justify-content-md-center">
                             <div className="col-md-3 video-gambar">
-                                <img src={require("../../assets/img/Log2o-01.png")} className="img-fluid" alt="Responsive image" />
+                                <img src={require("../../assets/img/Log2o-01.png")} className="img-fluid" alt="Responsive" />
                             </div>
                         </div>
                         <div className="row justify-content-md-center">
@@ -70,7 +68,7 @@ export default class LandingPage extends Component {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6 text-center-xs">
-                                <img src={require("../../assets/img/model.png")} className="img-fluid basket-person" alt="Responsive image" />
+                                <img src={require("../../assets/img/model.png")} className="img-fluid basket-person" alt="Basket" />
                             </div>
                             <div className="col-md-6">
                                 <div className="judul">
@@ -89,7 +87,7 @@ export default class LandingPage extends Component {
                 </div>
 
                 <div className="section2">
-                    <img src={require("../../assets/img/motif2.png")} className="img-fluid motif2" />
+                    <img src={require("../../assets/img/motif2.png")} className="img-fluid motif2" alt="motif" />
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
@@ -220,7 +218,7 @@ export default class LandingPage extends Component {
                 </div>
 
                 <div className="section4">
-                    <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" />
+                    <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" alt="motif" />
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
@@ -336,7 +334,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                             </div>
                                             <div className="box-body">
                                                 <div className="body-content">
-                                                    <p className="text-center">SMK Telkom Malang sangatlah menyenangkan apalagi kita disini mempelajari IT, disini kita juga diajarkan kekeluargaan, khususnya dengan TSBC, bukan hanya basket, tetapi pentingnya akan kekeluargaan pun kita terapkan dengan melakukan kegiatan sosial. TSBC terbuka untuk siapapun💙 SADUTI TEAMWORK!!</p>
+                                                    <p className="text-center">SMK Telkom Malang sangatlah menyenangkan apalagi kita disini mempelajari IT, disini kita juga diajarkan kekeluargaan, khususnya dengan TSBC, bukan hanya basket, tetapi pentingnya akan kekeluargaan pun kita terapkan dengan melakukan kegiatan sosial. TSBC terbuka untuk siapapun. SADUTI TEAMWORK!!</p>
                                                 </div>
                                                 <div className="profil text-center text-capitalize">
                                                     <h5>Chofifah Rahmatullaili Setiawati</h5>
@@ -359,7 +357,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                             </div>
                                             <div className="box-body">
                                                 <div className="body-content">
-                                                    <p className="text-center">Sekolah di SMK Telkom punya banyak keuntungan. Terutama bagi kamu yang dari luar kota sehingga bisa belajar hidup mandiri dan explore segala hal. Jangan cuma belajar formal tapi ikut juga kegiatan non formal. Basket salah satunya jadi organisasi favorit di moklet, karena organisasi ini mengajarkan kekelurgaan 🔥</p>
+                                                    <p className="text-center">Sekolah di SMK Telkom punya banyak keuntungan. Terutama bagi kamu yang dari luar kota sehingga bisa belajar hidup mandiri dan explore segala hal. Jangan cuma belajar formal tapi ikut juga kegiatan non formal. Basket salah satunya jadi organisasi favorit di moklet, karena organisasi ini mengajarkan kekelurgaan</p>
                                                 </div>
                                                 <div className="profil text-center text-capitalize">
                                                     <h5>jody baharizki</h5>
@@ -494,23 +492,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                 <div className="footer-telepon text-center">
                                     <h5>0341-72500</h5>
                                 </div>
-                                <div className="footer-socmed text-center">
-                                    <a href="">
-                                        <span>
-                                            <img src="assets/img/instagram.png" alt="" className="img-fluid fa fa-ig" />
-                                        </span>
-                                    </a>
-                                    <a href="">
-                                        <span>
-                                            <img src="assets/img/Youtube-icon.png" alt="" className="img-fluid fa fa-yt" />
-                                        </span>
-                                    </a>
-                                    <a href="">
-                                        <span>
-                                            <img src="assets/img/email.png" alt="" className="img-fluid fa fa-email" />
-                                        </span>
-                                    </a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
