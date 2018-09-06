@@ -52,7 +52,7 @@ class DataTeam extends Component {
                     </div>
 
                     <div class="comment-center p-t-10">
-                        <h3 class="comment-title">Pemain <span onClick={() => this.props.modalToggle('Siswa')}><i class="fa fa-plus"></i></span></h3>
+                        <h3 class="comment-title">Pemain <span onClick={() => this.props.modalToggle('Pemain')}><i class="fa fa-plus"></i></span></h3>
                         <div class="comment-body">
                             <div class="user-img"> <img src={require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pelatih"
                                 class="img-circle" />
