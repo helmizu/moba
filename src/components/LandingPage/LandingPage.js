@@ -94,23 +94,23 @@ export default class LandingPage extends Component {
                                     <div className="detail-hadiah">
                                         <div className="row">
                                             <div className="col-md-4">
-                                                <img src={require("../../assets/img/putra-01.png")} className="img-fluid text-center" alt="" />
-                                                <h5 className="text-center">Juara 1</h5>
-                                                <h6 className="text-center txt-grey">Rp.3.500.000</h6>
+                                                <img src={require("../../assets/img/PialaMoba_Putra1.png")} className="img-fluid" alt="" />
+                                                <h5 className="text-center txt-juara">Juara 1</h5>
+                                                <h6 className="text-center txt-grey">Rp.X.X00.000</h6>
                                                 <h6 className="text-center txt-grey">Sertifikat</h6>
                                                 <h6 className="text-center txt-grey">Trophy</h6>
                                             </div>
                                             <div className="col-md-4">
-                                                <img src={require("../../assets/img/putra-01.png")} className="img-fluid" alt="" />
-                                                <h5 className="text-center">Juara 1</h5>
-                                                <h6 className="text-center txt-grey">Rp.3.500.000</h6>
+                                                <img src={require("../../assets/img/PialaMoba_Putra2.png")} className="img-fluid" alt="" />
+                                                <h5 className="text-center txt-juara">Juara 2</h5>
+                                                <h6 className="text-center txt-grey">Rp.X.X00.000</h6>
                                                 <h6 className="text-center txt-grey">Sertifikat</h6>
                                                 <h6 className="text-center txt-grey">Trophy</h6>
                                             </div>
                                             <div className="col-md-4">
-                                                <img src={require("../../assets/img/putra-01.png")} className="img-fluid" alt="" />
-                                                <h5 className="text-center">Juara 1</h5>
-                                                <h6 className="text-center txt-grey">Rp.3.500.000</h6>
+                                                <img src={require("../../assets/img/PialaMoba_Putra3.png")} className="img-fluid" alt="" />
+                                                <h5 className="text-center txt-juara">Juara 3</h5>
+                                                <h6 className="text-center txt-grey">Rp.X.X00.000</h6>
                                                 <h6 className="text-center txt-grey">Sertifikat</h6>
                                                 <h6 className="text-center txt-grey">Trophy</h6>
                                             </div>
@@ -127,7 +127,7 @@ export default class LandingPage extends Component {
                                         </div>
                                         <div className="col-md-8">
                                             <div className="timeline_single">
-                                                <h6>18 Agustus 2018</h6>
+                                                <h6>8 September 2018</h6>
                                                 <h6 className="txt-grey h6">Pembukaan pendaftaran</h6>
                                             </div>
                                         </div>
@@ -138,7 +138,7 @@ export default class LandingPage extends Component {
                                         </div>
                                         <div className="col-md-8">
                                             <div className="timeline_single">
-                                                <h6>18 Agustus 2018</h6>
+                                                <h6>8 Oktober 2018</h6>
                                                 <h6 className="txt-grey h6">Pembukaan pendaftaran</h6>
                                             </div>
                                         </div>
@@ -149,7 +149,7 @@ export default class LandingPage extends Component {
                                         </div>
                                         <div className="col-md-8">
                                             <div className="timeline_single">
-                                                <h6>18 Agustus 2018</h6>
+                                                <h6>13 Oktober 2018</h6>
                                                 <h6 className="txt-grey h6">Pembukaan pendaftaran</h6>
                                             </div>
                                         </div>
@@ -160,7 +160,7 @@ export default class LandingPage extends Component {
                                         </div>
                                         <div className="col-md-8">
                                             <div className="timeline_single">
-                                                <h6>18 Agustus 2018</h6>
+                                                <h6>28 Oktober 2018</h6>
                                                 <h6 className="txt-grey h6">Pembukaan pendaftaran</h6>
                                             </div>
                                         </div>

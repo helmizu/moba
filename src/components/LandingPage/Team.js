@@ -7,7 +7,7 @@ export default class Team extends Component {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar team">
-                    <a className="navbar-brand" href="#">Moba Cup</a>
+                    <a className="navbar-brand" href="#"><img src={require("../../assets/img/ts-2.png")} width="15%"/></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@ export default class Team extends Component {
                         <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
-                            <li className="nav-item activeNav">
+                            <li className="nav-item activeNavLanding">
                                 <Link className="nav-link" to="/team">Team</Link>
                             </li>
                             <li className="nav-item">

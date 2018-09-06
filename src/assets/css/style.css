@@ -252,6 +252,7 @@ nav.landing a {
     font-size: 30px;
     line-height: 40px;
     margin-left: 120px;
+    margin-top: 25px;
 }
 
 .timeline_item {
@@ -406,7 +407,6 @@ nav.landing a {
 .section6 {
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
 }
 
 .gradient-footer {
@@ -496,6 +496,10 @@ nav.landing a {
     background-color: #fff;
     border : 1px dashed #b7b7b7;
     margin: 0 auto;
+}
+
+.txt-juara{
+    padding-top: 8px;
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
