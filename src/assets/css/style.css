@@ -451,6 +451,37 @@ nav.landing a {
 .block{
     display: block;
 }
+.analytics-info .list-inline li{
+    float: left;
+}
+.white-box{
+    padding-bottom: 50px;
+}
+.two-part li.title {
+    width: 80%;
+}
+.modal-content{
+    margin-top: 180px;
+}
+.modal-header {
+    display: block;
+}
+
+.cursor{
+    cursor: pointer;
+}
+#myModal{
+    background-color: #8a8a8aa6;
+}
+.right{
+    float: right;
+}
+.left-8{
+    margin-left: 8px;
+}
+.modal-body .white-box{
+    margin-bottom: 0;
+}
 
 @media (min-width: 320px) and (max-width: 424px) {
     .video-gambar {

@@ -8,14 +8,14 @@ class DataTeam extends Component {
                     <h3 class="box-title">Data Tim</h3>
 
                     <div class="comment-center p-t-10">
-                        <h3 class="comment-title">Pelatih <span><i class="fa fa-plus"></i></span></h3>
+                        <h3 class="comment-title">Pelatih <span onClick={() => this.props.modalToggle('Pelatih')}><i class="fa fa-plus"></i></span></h3>
                         <div class="comment-body">
-                            <div class="user-img"> <img src="../plugins/images/2000px-Disc_Plain_grey.svg.png" alt="pelatih"
+                            <div class="user-img"> <img src={require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pelatih"
                                 class="img-circle" />
                             </div>
-                            <div class="user-id"> <img src="../plugins/images/rectangle.png" alt="ktp" class="" />
+                            <div class="user-id"> <img src={require('../../assets/img/rectangle.png')} alt="ktp" class="" />
                             </div>
-                            <div class="user-id"> <img src="../plugins/images/rectangle2.png" alt="sertifikat" class="" />
+                            <div class="user-id"> <img src={require('../../assets/img/rectangle2.png')} alt="sertifikat" class="" />
                             </div>
                             <div class="mail-contnet">
                                 <h5>Nama Coach</h5>
@@ -24,12 +24,12 @@ class DataTeam extends Component {
                     </div>
 
                     <div class="comment-center p-t-10">
-                        <h3 class="comment-title">Manajemen <span><i class="fa fa-plus"></i></span></h3>
+                        <h3 class="comment-title">Manajemen <span onClick={() => this.props.modalToggle('Manajemen')} ><i class="fa fa-plus"></i></span></h3>
                         <div class="comment-body">
-                            <div class="user-img"> <img src="../plugins/images/2000px-Disc_Plain_grey.svg.png" alt="pelatih"
+                            <div class="user-img"> <img src={require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pelatih"
                                 class="img-circle" />
                             </div>
-                            <div class="user-id"> <img src="../plugins/images/rectangle.png" alt="ktp" class="" />
+                            <div class="user-id"> <img src={require('../../assets/img/rectangle.png')} alt="ktp" class="" />
                             </div>
                             <div class="mail-contnet">
                                 <h5>Nama Coach</h5>
@@ -38,12 +38,12 @@ class DataTeam extends Component {
                     </div>
 
                     <div class="comment-center p-t-10">
-                        <h3 class="comment-title">Guru <span><i class="fa fa-plus"></i></span></h3>
+                        <h3 class="comment-title">Guru Pendamping<span onClick={() => this.props.modalToggle('Guru')}><i class="fa fa-plus"></i></span></h3>
                         <div class="comment-body">
-                            <div class="user-img"> <img src="../plugins/images/2000px-Disc_Plain_grey.svg.png" alt="pelatih"
+                            <div class="user-img"> <img src={require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pelatih"
                                 class="img-circle" />
                             </div>
-                            <div class="user-id"> <img src="../plugins/images/rectangle.png" alt="ktp" class="" />
+                            <div class="user-id"> <img src={require('../../assets/img/rectangle.png')} alt="ktp" class="" />
                             </div>
                             <div class="mail-contnet">
                                 <h5>Nama Coach</h5>
@@ -52,12 +52,12 @@ class DataTeam extends Component {
                     </div>
 
                     <div class="comment-center p-t-10">
-                        <h3 class="comment-title">Pemain <span><i class="fa fa-plus"></i></span></h3>
+                        <h3 class="comment-title">Pemain <span onClick={() => this.props.modalToggle('Siswa')}><i class="fa fa-plus"></i></span></h3>
                         <div class="comment-body">
-                            <div class="user-img"> <img src="../plugins/images/2000px-Disc_Plain_grey.svg.png" alt="pelatih"
+                            <div class="user-img"> <img src={require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pelatih"
                                 class="img-circle" />
                             </div>
-                            <div class="user-id"> <img src="../plugins/images/rectangle.png" alt="ktp" class="" />
+                            <div class="user-id"> <img src={require('../../assets/img/rectangle.png')} alt="ktp" class="" />
                             </div>
                             <div class="mail-contnet">
                                 <h5>Nama Pemain</h5>
