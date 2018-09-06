@@ -651,6 +651,43 @@ bottom .register {
     padding: 0;
 }
 @media (min-width: 320px) and (max-width: 424px) {
+    .navbar-collapse{
+        display: block;
+    }
+
+    .navbar-brand{
+        width: 40%;
+        float: left;
+    }
+    .navbar-brand img{
+        width: 60%;
+    }
+    .navbar-collapse {
+        display: block;
+        float: left;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 0;
+        /* -webkit-box-flex: 1; */
+        -ms-flex-positive: 1;
+        /* flex-grow: 1; */
+        /* -webkit-box-align: center; */
+        -ms-flex-align: center;
+        align-items: center;
+        width: 52%;
+    }
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-collapse ul{
+        width: 100%;
+    }
+    .navbar-collapse ul li{
+        float: left;
+        font-size: 14px;
+        margin-right: 16px;
+    }
+
     .video-gambar {
         text-align: center;
     }
