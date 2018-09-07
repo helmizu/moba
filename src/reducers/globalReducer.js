@@ -1,4 +1,5 @@
-import { SET_CURRENT_USER, GET_ERRORS, IS_LOGGED_IN } from "../config/types";
+import { SET_CURRENT_USER, GET_ERRORS } from "../config/types";
+import isEmpty from '../utils/isEmpty';
 
 const initialState = {
     isLogedIn : true,
@@ -9,11 +10,8 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
 
-        case IS_LOGGED_IN:
-        return { ...state, isLogedIn : action.payload }
-        
         case SET_CURRENT_USER:
-        return { ...state, user : action.payload }
+        return { ...state, user : action.payload, isLogedIn : !isEmpty(action.payload) }
 
         case GET_ERRORS:
         return { ...state, errors : action.payload }

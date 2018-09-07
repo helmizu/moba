@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { GET_ERRORS, SET_CURRENT_USER, IS_LOGGED_IN } from '../config/types';
+import { GET_ERRORS, SET_CURRENT_USER } from '../config/types';
+import { baseUrl } from '../config';
 
-// Register User
 export const registerUser = (userData, history) => dispatch => {
-    axios.post('/api/users/register', userData)
+    axios.post(`${baseUrl}/users/register`, userData)
     .then(res => history.push('/login'))
     .catch(err => dispatch({
         type : GET_ERRORS,
@@ -12,13 +12,12 @@ export const registerUser = (userData, history) => dispatch => {
 };
 
 export const loginUser = (userData) => dispatch => {
-    axios.post('/api/users/login', userData)
+    axios.post(`${baseUrl}/users/login`, userData)
     .then(res => {
         const { token } = res.data;
         setAuthToken(token);
         localStorage.setItem('jwToken', token);
         const user = jwt_decode(token);
-        dispatch(log_status(true))
         dispatch(setCurrentUser(user));
     })
     .catch(err => dispatch({
@@ -28,8 +27,11 @@ export const loginUser = (userData) => dispatch => {
 }; 
 
 export const cekUser = (history) => dispatch => {
-    axios.get(`/api/users/currentUser`)
+    const token = localStorage.getItem('jwToken');
+    setAuthToken(token);
+    axios.get(`${baseUrl}/users/current`)
     .then(res => {
+        dispatch(setCurrentUser(res.data))
         history.push('/dashboard');
     })
     .catch(err => {
@@ -45,21 +47,11 @@ export const setCurrentUser = (user) => {
     };
 };
 
-
-export const log_status = (status) => {
-    return {
-        type : IS_LOGGED_IN,
-        payload : status
-    };
-};
-
 export const logoutUser = () => dispatch => {
     setAuthToken(false);
     localStorage.removeItem('jwToken');
-    dispatch(log_status(false))
     dispatch(setCurrentUser({}));
 };
-
 
 const setAuthToken = token => {
     if(token) {
