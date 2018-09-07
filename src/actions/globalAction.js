@@ -1,14 +1,18 @@
 import axios from 'axios';
+import jwt_decode from 'jwt-decode';
 import { GET_ERRORS, SET_CURRENT_USER } from '../config/types';
 import { baseUrl } from '../config';
 
 export const registerUser = (userData, history) => dispatch => {
     axios.post(`${baseUrl}/users/register`, userData)
     .then(res => history.push('/login'))
-    .catch(err => dispatch({
-        type : GET_ERRORS,
-        payload : err.response.data
-    }));
+    .catch(err => {
+        dispatch({
+            type : GET_ERRORS,
+            payload : err.response.data
+        })
+        window.alert(err.response.data.err)
+    });
 };
 
 export const loginUser = (userData) => dispatch => {
@@ -26,20 +30,6 @@ export const loginUser = (userData) => dispatch => {
     }));
 }; 
 
-export const cekUser = (history) => dispatch => {
-    const token = localStorage.getItem('jwToken');
-    setAuthToken(token);
-    axios.get(`${baseUrl}/users/current`)
-    .then(res => {
-        dispatch(setCurrentUser(res.data))
-        history.push('/dashboard');
-    })
-    .catch(err => {
-        dispatch(logoutUser());
-        history.push('/');
-    });
-};
-
 export const setCurrentUser = (user) => {
     return {
         type : SET_CURRENT_USER,
@@ -53,12 +43,10 @@ export const logoutUser = () => dispatch => {
     dispatch(setCurrentUser({}));
 };
 
-const setAuthToken = token => {
+export const setAuthToken = token => {
     if(token) {
-        // Apply to every request
         axios.defaults.headers.common['Authorization'] = token
     } else {
-        // Delete auth header
         delete axios.defaults.headers.common['Authorization']
     }
 };

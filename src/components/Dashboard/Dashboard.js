@@ -12,7 +12,7 @@ import { withRouter } from 'react-router-dom';
 export class Dashboard extends Component {
     constructor(props){
         super(props)
-
+        
         this.state={
             modalOpen : false,
             namaForm: ''
@@ -20,44 +20,44 @@ export class Dashboard extends Component {
         this.modalToggle = this.modalToggle.bind(this)
         this.closeModal = this.closeModal.bind(this)
     }
-
+    
     modalToggle = (namaForm) => {
         this.setState({modalOpen : true, namaForm})
     }
     closeModal = () => {
         this.setState({modalOpen : false})
     }
-
-  static propTypes = {
-    prop: PropTypes
-  }
-
-  render() {
-    return (
-        <div id="wrapper">
-        <Navbar />
-        <div className="page-wrapper">
+    
+    static propTypes = {
+        prop: PropTypes
+    }
+    
+    render() {
+        return (
+            <div id="wrapper">
+            <Navbar />
+            <div className="page-wrapper">
             <div className="container-fluid">
-                <Team/>
-                <Step/>
-                <div className="row">
-                    <DataTeam modalToggle={this.modalToggle}/>
-                    <Syarat />
-                    <Form modalToggle={this.closeModal} namaForm={this.state.namaForm} modalOpen={this.state.modalOpen} />
-                </div>
+            <Team/>
+            <Step/>
+            <div className="row">
+            <DataTeam modalToggle={this.modalToggle}/>
+            <Syarat />
+            <Form modalToggle={this.closeModal} namaForm={this.state.namaForm} modalOpen={this.state.modalOpen} />
             </div>
-        </div>
-    </div>
-    )
-  }
+            </div>
+            </div>
+            </div>
+        )
+    }
 }
 
 const mapStateToProps = (state) => ({
-  
+    
 })
 
 const mapDispatchToProps = {
-  
+    
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Dashboard))

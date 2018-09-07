@@ -7,6 +7,14 @@ nav.team a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    transition-duration: 3s;
+}
+
+nav.team a:hover {
+    background: -webkit-linear-gradient(0deg, rgb(253, 160, 133) 0%, rgba(250, 186, 117, 0.89) 46%, rgba(246, 211, 101, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 .activeNav {

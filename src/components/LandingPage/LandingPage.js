@@ -5,12 +5,20 @@ import { Link, withRouter } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import { logoutUser } from '../../actions/globalAction'
 
 export class LandingPage extends Component {
   static propTypes = {
-    prop: PropTypes
+    global: PropTypes.object.isRequired
   }
+  constructor() {
+    super()
+    this.logoutHandler = this.logoutHandler.bind(this)
+}
+
+logoutHandler () {
+    this.props.logoutUser()
+}
 
   render() {
     const settings = {
@@ -20,21 +28,25 @@ export class LandingPage extends Component {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+    const { isLogedIn } = this.props.global
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light landing">
                 <Link className="navbar-brand" to="/"><img src={require("../../assets/img/ts-2.png")} width="15%" alt="telkom school" /></Link>   
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Home
-                    <span className="sr-only">(current)</span>
-                            </Link>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/team">Team</Link>
                         </li>
+                        { isLogedIn ? (
+                            <li className="nav-item">
+                            <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                            </li>
+                        ) : '' }
                         <li className="nav-item">
-                            <Link className="nav-link" to="/login">Login</Link>
+                        { isLogedIn ? <a className="nav-link" onClick={this.logoutHandler}>Logout</a> : <Link className="nav-link" to="/login">Login</Link> }
                         </li>
                     </ul>
             </nav>
@@ -509,11 +521,11 @@ SUKSES TERUS MOBA CUP 2K18</p>
 }
 
 const mapStateToProps = (state) => ({
-  
+  global : state.global
 })
 
 const mapDispatchToProps = {
-  
+  logoutUser
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(LandingPage))
