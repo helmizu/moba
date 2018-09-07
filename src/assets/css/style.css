@@ -721,6 +721,11 @@ bottom .register {
     right: 0px !important;
 }
 
+.slick-prev:before, .slick-next:before {
+    color: #faa938 !important;
+    font-size: 32px !important;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .timeline::before {
         left: 17%;
