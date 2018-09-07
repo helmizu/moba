@@ -6,3 +6,5 @@ export const GET_MANAGER = "GET_MANAGER";
 export const GET_MEDIS = "GET_MEDIS";
 export const GET_GURU = "GET_GURU";
 export const GET_PEMAIN = "GET_PEMAIN";
+export const GET_SYARAT = "GET_SYARAT";
+export const VALUE_UPDATE = "VALUE_UPDATE";

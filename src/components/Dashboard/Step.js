@@ -2,6 +2,35 @@ import React, { Component } from 'react';
 
 class Step extends Component {
     render() {
+        const { pelatih, manager, pemain, surat_rekomendasi, bukti_transfer, verified } = this.props
+        const stepOne = function(){
+            if(pelatih && manager && pemain.length >= 5) {
+                return (<li className="text-right sign"><i className="fa fa-check success"></i></li>)
+            } else {
+                return (<li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>)
+            }
+        }
+        const stepTwo = function(){
+            if(surat_rekomendasi) {
+                return (<li className="text-right sign"><i className="fa fa-check success"></i></li>)
+            } else {
+                return (<li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>)
+            }
+        }
+        const stepThree = function(){
+            if(bukti_transfer) {
+                return (<li className="text-right sign"><i className="fa fa-check success"></i></li>)
+            } else {
+                return (<li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>)
+            }
+        }
+        const stepFour = function(){
+            if(verified) {
+                return (<li className="text-right sign"><i className="fa fa-check success"></i></li>)
+            } else {
+                return (<li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>)
+            }
+        }
         return (
             <div>
                 <div className="row">
@@ -14,7 +43,7 @@ class Step extends Component {
                                 <li className="title">
                                     <span>Lengkapi Data Tim</span>
                                 </li>
-                                <li className="text-right sign"><i className="fa fa-check success"></i></li>
+                                {stepOne()}
                             </ul>
                         </div>
                     </div>
@@ -25,7 +54,7 @@ class Step extends Component {
                                 <li className="title">
                                     <span>Surat Rekomendasi</span>
                                 </li>
-                                <li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>
+                                {stepTwo()}
                             </ul>
                         </div>
                     </div>
@@ -36,7 +65,7 @@ class Step extends Component {
                                 <li className="title">
                                     <span>Upload Bukti Transfer</span>
                                 </li>
-                                <li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>
+                                {stepThree()}
                             </ul>
                         </div>
                     </div>
@@ -47,7 +76,7 @@ class Step extends Component {
                                 <li className="title">
                                     <span>Menunggu Verifikasi</span>
                                 </li>
-                                <li className="text-right sign"><i className="fa fa-exclamation danger"></i></li>
+                                {stepFour()}
                             </ul>
                         </div>
                     </div>

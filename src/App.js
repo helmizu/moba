@@ -10,11 +10,10 @@ import Dashboard from './components/Dashboard/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 import Daftar from './components/Daftar/Daftar';
 import Login from './components/Login/Login';
-import { setCurrentUser, setAuthToken, logoutUser } from './actions/globalAction';
+import { setCurrentUser, logoutUser } from './actions/globalAction';
 import jwt_decode from 'jwt-decode';
 
 if(localStorage.jwToken){
-  setAuthToken(localStorage.jwtToken)
   const decoded = jwt_decode(localStorage.jwToken)
   const currentTime = Date.now() / 1000
   store.dispatch(setCurrentUser(decoded))

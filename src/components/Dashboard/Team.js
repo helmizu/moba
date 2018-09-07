@@ -6,7 +6,7 @@ class Team extends Component {
             <div>
                 <div className="row bg-title">
                     <div className="col-lg-12">
-                        <h4 className="page-title text-uppercase">SMK Telkom Malang Putra</h4>
+                        <h4 className="page-title text-uppercase">{this.props.team}</h4>
                     </div>
                 </div>
             </div>

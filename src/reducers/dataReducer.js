@@ -1,4 +1,4 @@
-import { DATA_INSERTED, GET_PELATIH, GET_MANAGER, GET_MEDIS, GET_GURU, GET_PEMAIN, GET_ERRORS } from "../config/types";
+import { DATA_INSERTED, GET_PELATIH, GET_MANAGER, GET_MEDIS, GET_GURU, GET_PEMAIN, GET_ERRORS, VALUE_UPDATE, GET_SYARAT } from "../config/types";
 
 const initialState = {
     success : {},
@@ -6,8 +6,10 @@ const initialState = {
     manager : {},
     medis : {},
     guru : {},
+    syarat : {},
     pemain : [],
-    error : {}
+    error : {},
+    update : {},
 }
 
 export default (state = initialState, action) => {
@@ -31,9 +33,14 @@ export default (state = initialState, action) => {
         case GET_PEMAIN:
         return { ...state, pemain : action.payload }
         
+        case GET_SYARAT: 
+        return { ...state, syarat : action.payload }
+        
         case GET_ERRORS:
         return { ...state, error : action.payload }
 
+        case VALUE_UPDATE: 
+        return { ...state, update : action.payload }
         default:
         return state
     }

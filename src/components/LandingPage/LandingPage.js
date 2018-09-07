@@ -613,6 +613,11 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                             <h4 className="text-center brandon sponsor">SPONSORED BY</h4>
                         </div>
                     </div>
+                    <div className="container">
+                        <div className="col-md-12 text-center m-t-40">
+                            <img src={require("../../assets/img/tsbc.png")} alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -625,13 +630,14 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                     <div className="row">
                         <div className="col-md-12 justify-content-md-center">
                             <div className="footer-sekolah text-center">
-                                <h5>SMK TELKOM MALANG</h5>
+                                <h4>SMK TELKOM MALANG</h4>
                                 <h6>Jl. Danau Ranau No.1 Malang</h6>
                             </div>
                             <div className="footer-telepon text-center">
-                                <h5>0341-72500</h5>
+                                <h6>085 100 188 805 (Heny)</h6>
+                                <h6>085 101 656 160 (Riya)</h6>
+                                <h6>085 103 656 277 (Nia)</h6>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

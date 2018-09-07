@@ -19,7 +19,6 @@ export const loginUser = (userData) => dispatch => {
     axios.post(`${baseUrl}/users/login`, userData)
     .then(res => {
         const { token } = res.data;
-        setAuthToken(token);
         localStorage.setItem('jwToken', token);
         const user = jwt_decode(token);
         dispatch(setCurrentUser(user));
@@ -38,15 +37,6 @@ export const setCurrentUser = (user) => {
 };
 
 export const logoutUser = () => dispatch => {
-    setAuthToken(false);
     localStorage.removeItem('jwToken');
     dispatch(setCurrentUser({}));
-};
-
-export const setAuthToken = token => {
-    if(token) {
-        axios.defaults.headers.common['Authorization'] = token
-    } else {
-        delete axios.defaults.headers.common['Authorization']
-    }
 };

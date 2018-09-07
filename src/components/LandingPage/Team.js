@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import '../../assets/css/group.css';
 import Navbar from '../Common/Navbar';
 import { withRouter } from 'react-router-dom';
 
 export class Team extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
+//   static propTypes = {
+//     prop: PropTypes
+//   }
 
   render() {
     return (
