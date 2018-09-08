@@ -22,9 +22,9 @@ class DataTeam extends Component {
                             </div>
                             <div className="user-id"> <img src={pelatih.ktp ? `${baseUrl}/images/${pelatih.ktp}` : require('../../assets/img/rectangle.png')} alt="ktp" className="" />
                             </div>
-                            <div className="user-id"> <img src={pelatih.lisensi ? `${baseUrl}/images/${pelatih.lisensi}` : require('../../assets/img/rectangle2.png')} alt="sertifikat" className="" />
+                            <div className="user-id sertifikat"> <img src={pelatih.lisensi ? `${baseUrl}/images/${pelatih.lisensi}` : require('../../assets/img/rectangle2.png')} alt="sertifikat" className="" />
                             </div>
-                            <div className="mail-contnet text-capitalize">
+                            <div className="mail-contnet text-capitalize txt-pelatih">
                                 <h5>{pelatih.nama ?  pelatih.nama : "<i>Nama Coach</i>"}</h5>
                             </div>
                         </div>
