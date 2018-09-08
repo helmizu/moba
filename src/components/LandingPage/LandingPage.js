@@ -205,26 +205,26 @@ logoutHandler () {
                                 <div className="col-md-12">
                                     <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto1.JPG")} className="img-fluid" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto2.JPG")} className="img-fluid" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto3.JPG")} className="img-fluid" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto4.JPG")} className="img-fluid" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto5.JPG")} className="img-fluid" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto6.JPG")} className="img-fluid" alt="" />
                                 </div>
-                                <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                <div className="col-md-3">
+                                    <img src={require("../../assets/img/foto7.JPG")} className="img-fluid" alt="" />
                                 </div>
                         </Slider>
                     </div>
