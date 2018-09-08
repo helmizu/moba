@@ -2,7 +2,7 @@ import { SET_CURRENT_USER, GET_ERRORS, SET_LOADING } from "../config/types";
 import isEmpty from '../utils/isEmpty';
 
 const initialState = {
-    isLogedIn : false,
+    isLogedIn : true,
     user : {},
     errors : {},
     loading : false,
