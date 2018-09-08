@@ -48,6 +48,12 @@ export class Daftar extends Component {
         }
     }
 
+    componentDidMount = () => {
+        if(localStorage.jwToken){
+            this.props.history.push('/dashboard')
+        }
+    }
+
     render() {
         const {email, sekolah, kategori, phone, password, konfirmasi } = this.state
         return (

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Navbar from '../Common/Navbar';
+import Loader from '../Common/Loader';
 import Team from './Team';
 import Step from './Step';
 import DataTeam from './DataTeam';
@@ -52,6 +53,7 @@ export class Dashboard extends Component {
         const { pelatih, manager, pemain, syarat } = this.props.data
         return (
             <div id="wrapper">
+            {this.props.data.loading ? < Loader /> : ""}
             <Navbar />
             <div className="page-wrapper">
             <div className="container-fluid">

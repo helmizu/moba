@@ -1,10 +1,11 @@
-import { SET_CURRENT_USER, GET_ERRORS } from "../config/types";
+import { SET_CURRENT_USER, GET_ERRORS, SET_LOADING } from "../config/types";
 import isEmpty from '../utils/isEmpty';
 
 const initialState = {
     isLogedIn : false,
     user : {},
-    errors : {}
+    errors : {},
+    loading : false,
 }
 
 export default (state = initialState, action) => {
@@ -15,6 +16,9 @@ export default (state = initialState, action) => {
 
         case GET_ERRORS:
         return { ...state, errors : action.payload }
+
+        case SET_LOADING:
+        return { ...state, loading : action.payload }
 
         default:
         return state

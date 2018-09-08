@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from "react-router-dom";
 import Navbar from '../Common/Navbar';
 import { loginUser } from '../../actions/globalAction';
+import Loader from '../Common/Loader';
 export class Login extends Component {
     static propTypes = {
         loginUser: PropTypes.func.isRequired,
@@ -38,15 +39,26 @@ export class Login extends Component {
     }
     
     componentWillReceiveProps = (nextProps) => {
-      if(this.props.global !== nextProps.global) {
+      if(nextProps.global.isLogedIn) {
           this.props.history.push('/dashboard')
-      }
+      } else {
+          if (nextProps.global.errors ) {
+              window.alert(nextProps.global.errors.err)
+            }
+        }
+    } 
+
+    componentDidMount = () => {
+        if(localStorage.jwToken){
+            this.props.history.push('/dashboard')
+        }
     }
-    
+
     render() {
         const {email, password} = this.state;
         return (
             <div>
+            {this.props.global.loading ? < Loader /> : ""}
             < Navbar />
             <div className="bg-grey">
             <div className="container">
