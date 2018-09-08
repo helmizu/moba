@@ -784,8 +784,6 @@ bottom .register {
     opacity: 0;
     cursor: pointer;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 /* Loader */
 .lds-css {
@@ -859,14 +857,10 @@ bottom .register {
   height: 200px !important;
   -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
   transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
-=======
+}
+
 .data-pemain{
     cursor: pointer !important;
->>>>>>> c909435a5ed35f585c42d010e853e541a86578ed
-=======
-.data-pemain{
-    cursor: pointer !important;
->>>>>>> c909435a5ed35f585c42d010e853e541a86578ed
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
