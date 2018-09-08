@@ -784,6 +784,10 @@ bottom .register {
     opacity: 0;
     cursor: pointer;
 }
+.data-pemain{
+    cursor: pointer !important;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .timeline::before {
         left: 17%;
