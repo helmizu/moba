@@ -86,7 +86,7 @@ class DataTeam extends Component {
                             pemain.length ? 
                             (
                                 pemain.map(pem => { return (
-                                    <div className="comment-body data-pemain" onClick={() => this.props.modalToggle('pemain', true)} key={pem._id}>
+                                    <div className="comment-body data-pemain" onClick={() => this.props.modalToggle('Pemain', true, pem._id)} key={pem._id}>
                                         <div className="user-img"> <img src={pem.foto ? `${baseUrl}/images/${pem.foto}` : require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pemain"
                                             className="img-circle" />
                                         </div>
@@ -101,7 +101,7 @@ class DataTeam extends Component {
                             ) 
                             : 
                             (
-                                <div className="comment-body data-pemain" onClick={() => this.props.modalToggle('pemain', true)}>
+                                <div className="comment-body data-pemain" >
                                     <div className="user-img"> <img src={require('../../assets/img/2000px-Disc_Plain_grey.svg.png')} alt="pelatih"
                                         className="img-circle" />
                                     </div>

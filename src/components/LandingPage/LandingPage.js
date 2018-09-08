@@ -38,9 +38,9 @@ logoutHandler () {
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Home</Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="/team">Team</Link>
-                        </li>
+                        </li> */}
                         { isLogedIn ? (
                             <li className="nav-item">
                             <Link className="nav-link" to="/dashboard">Dashboard</Link>
@@ -200,8 +200,36 @@ logoutHandler () {
                         </div>
                     </div>
 
+                    <div className="box-galery d-block d-md-none">
+                    <Slider {...settings}>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                                <div className="col-md-12">
+                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                </div>
+                        </Slider>
+                    </div>
                     <div className="row">
-                        <div className="box-galery col-md-12">
+                        <div className="box-galery col-md-12 d-none d-md-block">
                             <div className="row">
                                 <div className="col-md-3">
                                     <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid" alt="" />

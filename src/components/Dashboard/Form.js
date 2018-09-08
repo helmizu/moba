@@ -214,7 +214,7 @@ export class Form extends Component {
             <div className="col-sm-9">
             <div className="custom-file">
             <input value="" type="file" className="custom-file-input" name="foto" onChange={this.fileSelect} />
-            <label className="custom-file-label">{foto.name ? foto.name : (uFoto ? uFoto.slice(0, 70) : "Pilih Gambar")}</label>
+            <label className="custom-file-label">{foto.name ? foto.name : (uFoto ? uFoto.slice(0, 50) : "Pilih Gambar")}</label>
             </div>
             </div>
             </div>
@@ -223,7 +223,7 @@ export class Form extends Component {
             <div className="col-sm-9">
             <div className="custom-file">
             <input value="" type="file" className="custom-file-input" name="ktp" onChange={this.fileSelect} />
-            <label className="custom-file-label">{ktp.name ? ktp.name : (uKTP ? uKTP.slice(0, 70) : "Pilih Gambar")}</label>
+            <label className="custom-file-label">{ktp.name ? ktp.name : (uKTP ? uKTP.slice(0, 50) : "Pilih Gambar")}</label>
             </div>
             </div>
             </div>
@@ -233,7 +233,7 @@ export class Form extends Component {
             <div className="col-sm-9">
             <div className="custom-file">
             <input value="" type="file" className="custom-file-input" name="lisensi" onChange={this.fileSelect} />
-            <label className="custom-file-label">{lisensi.name ? lisensi.name : (uLisensi ? uLisensi.slice(0, 70) : "Pilih Gambar")}</label>
+            <label className="custom-file-label">{lisensi.name ? lisensi.name : (uLisensi ? uLisensi.slice(0, 50) : "Pilih Gambar")}</label>
             </div>
             </div>
             </div>

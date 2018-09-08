@@ -8,3 +8,5 @@ export const GET_GURU = "GET_GURU";
 export const GET_PEMAIN = "GET_PEMAIN";
 export const GET_SYARAT = "GET_SYARAT";
 export const VALUE_UPDATE = "VALUE_UPDATE";
+export const SET_LOADING = "SET_LOADING"
+export const SET_LOADING_DATA = "SET_LOADING_DATA"
