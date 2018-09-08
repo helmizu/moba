@@ -4,10 +4,9 @@ import { GET_ERRORS, SET_CURRENT_USER, SET_LOADING } from '../config/types';
 import { baseUrl } from '../config';
 
 export const registerUser = (userData, history) => dispatch => {
-    dispatch(setLoading(true))
+    dispatch(setLoading())
     axios.post(`${baseUrl}/users/register`, userData)
     .then(res => {
-        dispatch(setLoading(false))
         history.push('/login')
     })
     .catch(err => {
@@ -20,10 +19,9 @@ export const registerUser = (userData, history) => dispatch => {
 };
 
 export const loginUser = (userData) => dispatch => {
-    dispatch(setLoading(true))
+    dispatch(setLoading())
     axios.post(`${baseUrl}/users/login`, userData)
     .then(res => {
-        dispatch(setLoading(false))
         const { token } = res.data;
         localStorage.setItem('jwToken', token);
         const user = jwt_decode(token);
@@ -42,10 +40,10 @@ export const setCurrentUser = (user) => {
     };
 };
 
-export const setLoading = (condition) => {
+export const setLoading = () => {
     return {
         type : SET_LOADING,
-        payload : condition,
+        payload : true,
     }
 }
 

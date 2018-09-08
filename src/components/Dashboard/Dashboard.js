@@ -9,7 +9,7 @@ import DataTeam from './DataTeam';
 import Syarat from './Syarat';
 import Form from './Form';
 import { withRouter } from 'react-router-dom';
-import { loadData, loadDetail } from '../../actions/dataAction';
+import { loadData, loadDetail, loadPemain } from '../../actions/dataAction';
 
 export class Dashboard extends Component {
     constructor(){
@@ -24,11 +24,13 @@ export class Dashboard extends Component {
         this.closeModal = this.closeModal.bind(this)
     }
     
-    modalToggle = (namaForm, update) => {
+    modalToggle = (namaForm, update, id_pemain) => {
         this.setState({modalOpen : true, namaForm, update : update})
         if (update) {
             if (namaForm !== "Pemain") {
                 this.props.loadDetail(namaForm, this.props.global.user.sekolah)
+            } else {
+                this.props.loadPemain(id_pemain)
             }
         }
     }
@@ -42,6 +44,7 @@ export class Dashboard extends Component {
         data: PropTypes.object.isRequired,
         loadData: PropTypes.func.isRequired,
         loadDetail: PropTypes.func.isRequired,
+        loadPemain: PropTypes.func.isRequired,
     }
     
     componentDidMount = () => {
@@ -78,7 +81,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
     loadData,
-    loadDetail
+    loadDetail,
+    loadPemain,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Dashboard))

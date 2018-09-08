@@ -42,7 +42,7 @@ export class Login extends Component {
       if(nextProps.global.isLogedIn) {
           this.props.history.push('/dashboard')
       } else {
-          if (nextProps.global.errors ) {
+          if (nextProps.global.errors !== this.props.global.errors) {
               window.alert(nextProps.global.errors.err)
             }
         }
