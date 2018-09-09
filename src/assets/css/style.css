@@ -289,13 +289,14 @@ nav.landing a:hover{
     padding-bottom: 150px;
 }
 
-.galeri::after {
+.galeri::after {    
     content: "";
     position: absolute;
-    left: 48%;
+    left: 45%;
     right: 48%;
     bottom: 0;
-    width: 4%;
+    width: 10%;
+    top: 100%;
     border-top: 4px solid #faa823;
 }
 
@@ -939,7 +940,7 @@ bottom .register {
         width: 40%;
     }
     .hadiah::before{
-        top: 4%;
+        top:10%;
         width: 12%;
         left: 44%;
         right: 44%;

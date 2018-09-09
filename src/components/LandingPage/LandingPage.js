@@ -113,27 +113,14 @@ logoutHandler () {
                             <h4 className="text-center judulHadiah brandon">HADIAH</h4>
                             <div className="hadiah">
                                 <div className="detail-hadiah">
-                                    <div className="row">
+                                    <div className="row justify-content-center">
                                         <div className="col-md-4">
-                                            <img src={require("../../assets/img/PialaMoba_Putra1.png")} className="img-fluid" alt="" />
-                                            <h5 className="text-center txt-juara">Juara 1</h5>
-                                            <h6 className="text-center txt-grey">Rp.X.X00.000</h6>
+                                            <img src={require("../../assets/img/pialamoba.png")} className="img-fluid" alt="" />
+                                            <br/>
+                                            <br/>
+                                            <h6 className="text-center txt-grey">Uang Pembinaan</h6>
                                             <h6 className="text-center txt-grey">Sertifikat</h6>
-                                            <h6 className="text-center txt-grey">Trophy</h6>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <img src={require("../../assets/img/PialaMoba_Putra2.png")} className="img-fluid" alt="" />
-                                            <h5 className="text-center txt-juara">Juara 2</h5>
-                                            <h6 className="text-center txt-grey">Rp.X.X00.000</h6>
-                                            <h6 className="text-center txt-grey">Sertifikat</h6>
-                                            <h6 className="text-center txt-grey">Trophy</h6>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <img src={require("../../assets/img/PialaMoba_Putra3.png")} className="img-fluid" alt="" />
-                                            <h5 className="text-center txt-juara">Juara 3</h5>
-                                            <h6 className="text-center txt-grey">Rp.X.X00.000</h6>
-                                            <h6 className="text-center txt-grey">Sertifikat</h6>
-                                            <h6 className="text-center txt-grey">Trophy</h6>
+                                            <h6 className="text-center txt-grey">Piala</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +146,7 @@ logoutHandler () {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="timeline_single">
-                                            <h6>8 Oktober 2018</h6>
+                                            <h6>30 September 2018</h6>
                                             <h6 className="txt-grey h6">Penutupan pendaftaran</h6>
                                         </div>
                                     </div>
@@ -172,17 +159,6 @@ logoutHandler () {
                                         <div className="timeline_single">
                                             <h6>13 Oktober 2018</h6>
                                             <h6 className="txt-grey h6">Pertandingan Grup</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row timeline_item">
-                                    <div className="col-md-4 text-center">
-                                        <div className="timeline_item_icon text-center"></div>
-                                    </div>
-                                    <div className="col-md-8">
-                                        <div className="timeline_single">
-                                            <h6>28 Oktober 2018</h6>
-                                            <h6 className="txt-grey h6">Pertandingan Final</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +179,7 @@ logoutHandler () {
                     <div className="box-galery d-block d-md-none">
                     <Slider {...settings}>
                                 <div className="col-md-12">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid p-20" alt="" />
+                                    <img src={require("../../assets/img/foto0.JPG")} className="img-fluid p-20" alt="" />
                                 </div>
                                 <div className="col-md-3">
                                     <img src={require("../../assets/img/foto1.JPG")} className="img-fluid" alt="" />
@@ -232,7 +208,7 @@ logoutHandler () {
                         <div className="box-galery col-md-12 d-none d-md-block">
                             <div className="row">
                                 <div className="col-md-3">
-                                    <img src={require("../../assets/img/IMG_6166.JPG")} className="img-fluid" alt="" />
+                                    <img src={require("../../assets/img/foto0.JPG")} className="img-fluid" alt="" />
                                 </div>
                                 <div className="col-md-3">
                                     <img src={require("../../assets/img/foto1.JPG")} className="img-fluid" alt="" />
@@ -335,7 +311,7 @@ logoutHandler () {
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Nanda Setya Pramudya</h5>
-                                                <h5>Pt Metrosolusi Teknologi Indonesia</h5>
+                                                <h5>PT Metrosolusi Teknologi Indonesia</h5>
                                                 <h6>Lulusan Tahun 2014</h6>
                                             </div>
                                         </div>
@@ -386,7 +362,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Hanna Anie Sharlene Rayitno Soebari</h5>
-                                                <h5>PT. Alur Pelayaran Barat Surabaya</h5>
+                                                <h5>PT. Alur Pelayaran Barat Surabaya / institut teknologi sepuluh nopember </h5>
                                                 <h6>Lulusan Tahun 2013</h6>
                                             </div>
                                         </div>
@@ -432,7 +408,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>jody baharizki</h5>
-                                                <h5>Emmh Snack Indonesia</h5>
+                                                <h5>Pemilik Emmh Snack Indonesia</h5>
                                                 <h6>Lulusan Tahun 2013</h6>
                                             </div>
                                         </div>
@@ -585,29 +561,6 @@ Pengalaman menjadi bagian dari SPBC atau yang sekarang lebih dikenal dengan TSBC
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
-                                                <img src={require("../../assets/img/alumni/dicky.jpg")} alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="box-body">
-                                            <div className="body-content">
-                                                <p className="text-center"><br/>Kesan saya di SMK Telkom cukup baik karena disekolah sini saya diajarkan ilmu ilmu untuk menunjang pekerjaan saya, selain itu saya juga bergabung di TSBC disini saya mendapat keluarga baru dengan rasa kekeluargaan yang sangat kental. Mantap wes pokok.<br/></p>
-                                            </div>
-                                            <div className="profil text-center text-capitalize">
-                                                <h5>M Dicky Ardiansyah</h5>
-                                                <h5>PT Sinergy Informasi Pratama</h5>
-                                                <h6>Lulusan Tahun 2017</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
-                            <div className="item">
-                                <div className="col-md-12">
-                                    <div className="box-image">
-                                        <div className="box-header">
-                                            <div className="avatar">
                                                 <img src={require("../../assets/img/alumni/harifi.jpg")} alt="" />
                                             </div>
                                         </div>
@@ -656,17 +609,22 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                         <div className="col-md-6 gradient-footer"></div>
                     </div>
                     <div className="row">
-                        <div className="col-md-12 justify-content-md-center">
-                            <div className="footer-sekolah text-center">
+                            <div className="col-md-4 footer-sekolah text-center">
                                 <h4>SMK TELKOM MALANG</h4>
-                                <h6>Jl. Danau Ranau No.1 Malang</h6>
+                                <h6>Jl. Danau Ranau Sawojajar Malang 65139</h6>
+                                <h6>www.smktelkom-mlg.sch.id</h6>
                             </div>
-                            <div className="footer-telepon text-center">
+                            <div className=" col-md-4 footer-telepon text-center">
+                                <h4>Hubungi Kami</h4>
                                 <h6>085 100 188 805 (Heny)</h6>
                                 <h6>085 101 656 160 (Riya)</h6>
                                 <h6>085 103 656 277 (Nia)</h6>
                             </div>
-                        </div>
+                            <div className=" col-md-4 footer-telepon text-center">
+                                <h4>Info Lebih Lanjut</h4>
+                                <h6><i class="fas fa-envelope"></i> mobacup@gmail.com</h6>
+                                <h6><i class="fab fa-instagram"></i> @mobacup</h6>
+                            </div>
                     </div>
                 </div>
             </div>
