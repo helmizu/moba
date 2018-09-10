@@ -492,29 +492,6 @@ Pengalaman menjadi bagian dari SPBC atau yang sekarang lebih dikenal dengan TSBC
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
-                                                <img src={require("../../assets/img/alumni/julius.jpeg")} alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="box-body">
-                                            <div className="body-content">
-                                                <p className="text-center"><br/><br/>This famous family comunity , we love SPBC<br/><br/></p>
-                                            </div>
-                                            <div className="profil text-center text-capitalize">
-                                                <h5>Julius dwi</h5>
-                                                <h5>Malang</h5>
-                                                <h6>Lulusan Tahun 2015</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
-                            <div className="item">
-                                <div className="col-md-12">
-                                    <div className="box-image">
-                                        <div className="box-header">
-                                            <div className="avatar">
                                                 <img src={require("../../assets/img/alumni/rochmawati.jpg")} alt="" />
                                             </div>
                                         </div>
