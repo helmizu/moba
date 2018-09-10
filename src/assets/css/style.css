@@ -602,6 +602,10 @@ bottom .register {
 }
 
 /* tambahan */
+.text-oren {
+    color : #faa823;
+}
+
 .navbar-dashboard{
     padding: 0 !important;
 }

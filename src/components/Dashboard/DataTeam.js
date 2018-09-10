@@ -13,7 +13,6 @@ class DataTeam extends Component {
                         <h3 className="comment-title">
                             Pelatih
                             {pelatih ? (<span className="btn btn-oren" onClick={() => this.props.modalToggle('Pelatih', true)}>Update <i className="fa fa-plus"></i></span>) : (<span className="btn btn-default" onClick={() => this.props.modalToggle('Pelatih', false)}>Tambah <i className="fa fa-plus"></i></span>)}
-                            
                         </h3>
                 
                         <div className="comment-body">
@@ -25,7 +24,7 @@ class DataTeam extends Component {
                             <div className="user-id sertifikat"> <img src={pelatih.lisensi ? `${baseUrl}/images/${pelatih.lisensi}` : require('../../assets/img/rectangle2.png')} alt="sertifikat" className="" />
                             </div>
                             <div className="mail-contnet text-capitalize txt-pelatih">
-                                <h5>{pelatih.nama ?  pelatih.nama : "<i>Nama Coach</i>"}</h5>
+                                <h5>{pelatih.nama ?  pelatih.nama : <em className="text-muted">Nama Coach</em>}</h5>
                             </div>
                         </div>
                     </div>
@@ -41,7 +40,7 @@ class DataTeam extends Component {
                             <div className="user-id"> <img src={manager.ktp ? `${baseUrl}/images/${manager.ktp}` : require('../../assets/img/rectangle.png')} alt="ktp" className="" />
                             </div>
                             <div className="mail-contnet text-capitalize">
-                                <h5>{manager.nama ? manager.nama : "Nama Manajer"}</h5>
+                                <h5>{manager.nama ? manager.nama : <em className="text-muted">Nama Manajer</em>}</h5>
                             </div>
                         </div>
                     </div>
@@ -57,7 +56,7 @@ class DataTeam extends Component {
                             <div className="user-id"> <img src={medis.ktp ? `${baseUrl}/images/${medis.ktp}` : require('../../assets/img/rectangle.png')} alt="ktp" className="" />
                             </div>
                             <div className="mail-contnet text-capitalize">
-                                <h5>{medis.nama ? medis.nama : "Nama Medis"}</h5>
+                                <h5>{medis.nama ? medis.nama : <em className="text-muted">Nama Medis</em>}</h5>
                             </div>
                         </div>
                     </div>
@@ -73,7 +72,7 @@ class DataTeam extends Component {
                             <div className="user-id"> <img src={guru.ktp ? `${baseUrl}/images/${guru.ktp}` : require('../../assets/img/rectangle.png')} alt="ktp" className="" />
                             </div>
                             <div className="mail-contnet text-capitalize">
-                                <h5>{guru.nama ? guru.nama : "Nama Guru"}</h5>
+                                <h5>{guru.nama ? guru.nama : <em className="text-muted">Nama Guru</em>}</h5>
                             </div>
                         </div>
                     </div>
@@ -108,7 +107,7 @@ class DataTeam extends Component {
                                     <div className="user-id"> <img src={require('../../assets/img/rectangle.png')} alt="ktp" className="" />
                                     </div>
                                     <div className="mail-contnet text-capitalize">
-                                        <h5>Nama Pemain</h5>
+                                        <h5><em className="text-muted">Nama Pemain</em></h5>
                                     </div>
                                 </div>   
                             )
@@ -116,7 +115,6 @@ class DataTeam extends Component {
                     </div>
                 </div>
             </div>
-
         );
     }
 }

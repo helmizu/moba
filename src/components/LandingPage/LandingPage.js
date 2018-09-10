@@ -14,11 +14,17 @@ export class LandingPage extends Component {
   constructor() {
     super()
     this.logoutHandler = this.logoutHandler.bind(this)
-}
+    }
 
-logoutHandler () {
-    this.props.logoutUser()
-}
+    logoutHandler () {
+        this.props.logoutUser()
+    }
+
+    componentDidMount = () => {
+        if(localStorage.jwToken){
+            this.props.history.push('/dashboard')
+        }
+    }
 
   render() {
     const settings = {
@@ -94,7 +100,7 @@ logoutHandler () {
                                 <h3>MOBA CUP 2018</h3>
                                 <h4>THE GOLDEN HOPE</h4>
                             </div>
-                            <div className="paragraf">
+                            <div className="paragraf text-justify">
 
                                 <p>Dalam penyaluran bakat siswa-siswi di bidang olahraga khususnya bolabasket, SMK Telkom turut berpartisipasi untuk mengadakan kompetisi bolabasket antar SMP/MTs sederajat dengan nama MOBA CUP (Moklet Basketball Cup). MOBA CUP pertama kali diadakan pada tahun 2017 dan telah diikuti oleh 20 tim yang tersebar di 6 kota di Jawa Timur diantaranya kota Lumajang, Pasuruan, Kabupaten Malang, Kota Malang, Blitar dan Tulungagung.</p>
                                 <p> Untuk melanjutkan kegiatan tersebut, kini SMK Telkom Malang merealisasikan sebuah turnamen bolabasket bernama MOBA CUP 2018 “The Golden Hope” untuk siswa-siswi tingkat SMP/MTs/sederajat di Provinsi Jawa Timur. Melalui turnamen ini, diharapkan seluruh siswa  tingkat SMP/MTs/sederajat di Provinsi Jawa Timur dapat ikut serta secara aktif menyalurkan bakat mereka di bidang olahraga, yaitu bolabasket. Nantinya, para peserta turnamen ini akan direkomendasikan agar dapat bergabung untuk melanjutkan studi dan menjadi anggota keluarga Wikusama (ikatan alumni SMK Telkom Malang) untuk meneruskan ukiran prestasi berikutnya
@@ -135,8 +141,8 @@ logoutHandler () {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="timeline_single">
-                                            <h6>8 September 2018</h6>
-                                            <h6 className="txt-grey h6">Pembukaan pendaftaran</h6>
+                                            <h6>Pembukaan pendaftaran</h6>
+                                            <h6 className="txt-grey h6">8 September 2018</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -146,8 +152,8 @@ logoutHandler () {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="timeline_single">
-                                            <h6>30 September 2018</h6>
-                                            <h6 className="txt-grey h6">Penutupan pendaftaran</h6>
+                                            <h6>Penutupan pendaftaran</h6>
+                                            <h6 className="txt-grey h6">30 September 2018</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -157,8 +163,19 @@ logoutHandler () {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="timeline_single">
-                                            <h6>13 Oktober 2018</h6>
-                                            <h6 className="txt-grey h6">Pertandingan Grup</h6>
+                                            <h6>Pertandingan Grup</h6>
+                                            <h6 className="txt-grey h6">XX XXXXXX 2018</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row timeline_item">
+                                    <div className="col-md-4 text-center">
+                                        <div className="timeline_item_icon text-center"></div>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <div className="timeline_single">
+                                            <h6>Pertandingan Final</h6>
+                                            <h6 className="txt-grey h6">XX XXXXXX 2018</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +184,39 @@ logoutHandler () {
                     </div>
                 </div>
             </div>
-
+            <div className="section4">
+                <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" alt="motif" />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4 className="text-center brandon testimoni">Syarat dan Ketentuan</h4>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="item">
+                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-body">
+                                            <div className="body-content text-justify">
+                                            <h6>1. Peserta wajib membuat akun dan melengkapi dashboard pendaftaran dengan data yang benar dan legal secara hukum di <span className="text-oren">www.mobacup.com</span>.</h6>
+                                            <h6>2. Peserta yang ingin mendaftarkan <span className="text-oren">Tim Putra dan Tim Putri</span> diharapkan mendaftarkan <span className="text-oren">dua akun yang berbeda dengan asal sekolah yang sama</span>.</h6>
+                                            <h6>3. Setiap tim wajib mengisi data <span className="text-oren">pelatih (wajib)</span>, <span className="text-oren">manajer (wajib)</span>, medis (optional), guru (optional), dan <span className="text-oren">pemain minimal 5 pemain (wajib)</span>.</h6>
+                                            <h6>4. Setiap tim wajib mengupload <span className="text-oren">scan atau foto surat rekomendasi</span> yang diberikan oleh sekolah masing-masing di dashboard.</h6>
+                                            <h6>5. Setiap tim yang telah melengkapi data harus membayar biaya pendaftaran sebesar <span className="text-oren">Rp 500.000</span> dengan transfer ke <span className="text-oren">Rekening BNI 0390 877 097 a.n. Bias Damiasa</span> dan mengupload <span className="text-oren">foto bukti transfer</span> di dashboard.</h6>
+                                            <h6>6. Tunggu <span className="text-oren">verifikasi</span> dari admin untuk memastikan bahwa tim anda telah terdaftar sepenuhnya untuk mengikuti kompetisi <span className="text-oren">MOBA CUP 2018</span>.</h6>
+                                            <h6>7. Peserta yang tidak dapat memenuhi persyaratan pendaftaran hingga batas waktu yang telah ditentukan dianggap pendaftarannya gagal.</h6>
+                                            <h6>8. <span className="text-oren">Semua data</span> yang telah diisikan pada di dashboard pendaftaran <span className="text-oren">WAJIB</span> dibawa ketika pertandingan berlangsung sebagai <span className="text-oren">bukti fisik</span>.</h6>
+                                            <h6>9. Jika ada hal yang dirasa kurang jelas bisa langsung menghubungi ke CP yang tersedia di bawah.</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="section3">
                 <div className="container-fluid">
                     <div className="row">
@@ -237,7 +286,87 @@ logoutHandler () {
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div className="section4">
+                <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" alt="motif" />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4 className="text-center brandon testimoni">Testimoni</h4>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="item">
+                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-header">
+                                            <div className="avatar">
+                                            <img src={require("../../assets/img/wibi.jpeg")} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="box-body">
+                                            <div className="body-content">
+                                            <p className="text-center">Sa du ti teamworkkk.</p>
+                                            </div>
+                                            <div className="profil text-center text-capitalize">
+                                                <h5>Dikky Rahmad Shafara</h5>
+                                                <h5>SMPN X Malang</h5>
+                                                <h6>MOBA CUP 2017</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="item">
+                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-header">
+                                            <div className="avatar">
+                                            <img src={require("../../assets/img/wibi.jpeg")} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="box-body">
+                                            <div className="body-content">
+                                            <p className="text-center">Sa du ti teamworkkk.</p>
+                                            </div>
+                                            <div className="profil text-center text-capitalize">
+                                                <h5>Fareladzin Wibi Ramadhan</h5>
+                                                <h5>SMPN 5 Malang</h5>
+                                                <h6>MOBA CUP 2017</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="item">
+                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-header">
+                                            <div className="avatar">
+                                            <img src={require("../../assets/img/wibi.jpeg")} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="box-body">
+                                            <div className="body-content">
+                                            <p className="text-center">Sa du ti teamworkkk.</p>
+                                            </div>
+                                            <div className="profil text-center text-capitalize">
+                                                <h5>Arya Erlangga Fasa</h5>
+                                                <h5>SMPN X Lumajang</h5>
+                                                <h6>MOBA CUP 2017</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="section4">
@@ -245,11 +374,39 @@ logoutHandler () {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="text-center brandon testimoni">TESTIMONI ALUMNI</h4>
+                            <h4 className="text-center brandon testimoni">What They Say About SMK Telkom Malang and TSBC</h4>
                         </div>
                     </div>
                     <div className="">
                     <Slider {...settings}>
+                        <div className="col-md-12">
+                            <div className="item">
+                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-header">
+                                            <div className="avatar">
+                                                <img src={require("../../assets/img/alumni/bagas.jpg")} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="box-body">
+                                            <div className="body-content">
+                                                <p className="text-center">MOBA CUP adalah ajang turnamen bola basket SMP/SMPK/MI dan sederajatnya.
+Saya salah satu panitia MOBA CUP sebelumnya merasa sangat senang dan bangga bahwa kami (panitia dan keluarga besar SMK TELKOM MALANG) bisa menampung bakat minat para pemain basket tingkat SMP dan sederajatnya. 
+
+Sangat hebat dan keren
+Saya bangga menjadi bagian dari MOBA CUP.
+SUKSES TERUS MOBA CUP 2K18</p>
+                                            </div>
+                                            <div className="profil text-center text-capitalize">
+                                                <h5>Bagas Try Ambodo</h5>
+                                                <h5>PT. WAHANA MAKMUR SEJATI</h5>
+                                                <h6>Lulusan Tahun 2018</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-md-12">
                             <div className="item">
                                 <div className="col-md-12">
@@ -325,21 +482,16 @@ logoutHandler () {
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
-                                                <img src={require("../../assets/img/alumni/bagas.jpg")} alt="" />
+                                                <img src={require("../../assets/img/alumni/lana.jpeg")} alt="" />
                                             </div>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">MOBA CUP adalah ajang turnamen bola basket SMP/SMPK/MI dan sederajatnya.
-Saya salah satu panitia MOBA CUP sebelumnya merasa sangat senang dan bangga bahwa kami (panitia dan keluarga besar SMK TELKOM MALANG) bisa menampung bakat minat para pemain basket tingkat SMP dan sederajatnya. 
-
-Sangat hebat dan keren
-Saya bangga menjadi bagian dari MOBA CUP.
-SUKSES TERUS MOBA CUP 2K18</p>
+                                                <p className="text-center">Telkom Basketball Club atau biasa disebut TSBC sudah merupakan keluarga bagi saya. Basket juga merupakan salah satu hal yang saya senangi, apalagi didukung dengan adanya TSBC yang sudah saya anggap sebagai keluarga. TSBC nggak cuman mengajarkan teknik cara bermain basket, latian, ikut tournament, walaupun nggak terlalu jago basket kalian juga boleh ikut TSBC karena disini kita juga diajari cara organisasi yang baik dan kekeluargaan. The best offense is good defense</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
-                                                <h5>Bagas Try Ambodo</h5>
-                                                <h5>PT. WAHANA MAKMUR SEJATI</h5>
+                                                <h5>Arkhab Maulana</h5>
+                                                <h5>PT Sinergy Informasi Pratama</h5>
                                                 <h6>Lulusan Tahun 2018</h6>
                                             </div>
                                         </div>

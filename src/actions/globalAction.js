@@ -1,6 +1,6 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
-import { GET_ERRORS, SET_CURRENT_USER, SET_LOADING } from '../config/types';
+import { GET_ERRORS, SET_CURRENT_USER, SET_LOADING, DATA_INSERTED } from '../config/types';
 import { baseUrl } from '../config';
 
 export const registerUser = (userData, history) => dispatch => {
@@ -8,6 +8,10 @@ export const registerUser = (userData, history) => dispatch => {
     axios.post(`${baseUrl}/users/register`, userData)
     .then(res => {
         history.push('/login')
+        dispatch({
+            type : DATA_INSERTED,
+            payload : res.data
+        })
     })
     .catch(err => {
         dispatch({

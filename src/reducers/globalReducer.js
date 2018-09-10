@@ -1,4 +1,4 @@
-import { SET_CURRENT_USER, GET_ERRORS, SET_LOADING } from "../config/types";
+import { SET_CURRENT_USER, GET_ERRORS, SET_LOADING, DATA_INSERTED } from "../config/types";
 import isEmpty from '../utils/isEmpty';
 
 const initialState = {
@@ -10,6 +10,9 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
+
+        case DATA_INSERTED:
+        return { ...state, loading : false }
 
         case SET_CURRENT_USER:
         return { ...state, user : action.payload, isLogedIn : !isEmpty(action.payload), loading: false }
