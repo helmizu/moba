@@ -13,11 +13,29 @@ export class LandingPage extends Component {
   }
   constructor() {
     super()
+    this.state = {
+        testiArya : false,
+        testiDiky : false
+    }
     this.logoutHandler = this.logoutHandler.bind(this)
+    this.dikyHandler = this.dikyHandler.bind(this)
+    this.aryaHandler = this.aryaHandler.bind(this)
     }
 
     logoutHandler () {
         this.props.logoutUser()
+    }
+
+    dikyHandler = () => {
+        this.setState({
+            testiDiky : !this.state.testiDiky
+        })
+    }
+
+    aryaHandler = (e) => {
+        this.setState({
+            testiArya : !this.state.testiArya
+        })
     }
 
     componentDidMount = () => {
@@ -36,6 +54,8 @@ export class LandingPage extends Component {
         lazyLoad : true
     };
     const { isLogedIn } = this.props.global
+    const arya = "Hai... saya Arya peserta MOBA CUP 2017. Saat itu saya membela tim SMPN 3 Lumajang. MOBA CUP itu seru banget, menambah pengalaman bermain bersama tim-tim besar dari daerah lain, kita bisa mengevaluasi apa kekurangan dan kelebihan dari tim kita. Setelah ikut MOBA CUP saya tertarik untuk bersekolah di SMK Telkom Malang. Rasanya sangat bangga dan senang ketika di terima, apalagi di SMK TELKOM itu pengumumannya sebelum UN muncul jadi kita enggak bingung bingung lagi untuk cari sekolah. Di SMK Telkom Malang itu seru banget, kita bakalan mempunyai teman baru yang berbagai asal, kita juga bisa belajar bahasa yang belum kita ketahui dan kita dapat mempunyai keluarga baru, apalagi jadi bagian keluarga basket TSBC wah serasa kita punya keluarga yang membuat saya SMK TELKOM MALANG dan TSBC itu seperti rumah sendiri, di TSBC juga mengajarkan saya tentang berbagi terhadap sesama dan bersosialisasi selain bermain Basket."
+    const diky = "Saya adalah salah satu peserta pada MobaCup 2017 saat itu saya membela SMPN 18 Malang. Menurut saya MobaCup 2017 adalah event yang paling seru dari pada event lain. Pengalaman ini  sangat mengesankan dan menyenangkan yang pernah saya alami saat mengikuti kompetisi basket ini, karena banyaknya tim-tim bagus yang hadir selain itu saya jadi nominasi pemain favorit MOBACUP. Konsep acaranya pun sangat baik, apalagi dengan adanya selingan pengisi acara waktu istirahat yang membuat peserta tidak bosan. MOBA CUP sendiri menurut saya event paling bergengsi dan paling banyak diminati SMP-SMP lain karena nominal hadiahnya yang cukup besar dan menjadikan saya dan tim-tim lain termotivasi untuk juara. Saya sangat bersyukur setelah ikut MOBA CUP saya direkomendasikan untuk masuk SMK Telkom Malang. Akhirnya saya bersekolah di SMK Telkom malang dan bergabung dengan tim Basketnya yg bernama TSBC yang ternyata teman-temannya seru abis dan udah seperti keluarga sendiri."
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light landing">
@@ -298,30 +318,48 @@ export class LandingPage extends Component {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="item">
-                                <div className="col-md-12">
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
-                                            <img src={require("../../assets/img/wibi.jpeg")} alt="" />
+                                            <img src={require("../../assets/img/diky.jpeg")} alt="" />
                                             </div>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                            <p className="text-center">Sa du ti teamworkkk.</p>
+                                            {this.state.testiDiky ? <p className="text-justify">{diky} <span name="testiDiky" className="text-oren clickable" onClick={() => this.dikyHandler()}>less</span></p> : <p className="text-justify">{diky.slice(0, 500)} ... <span name="testiDiky" className="text-oren clickable" onClick={() => this.dikyHandler()}>more</span></p> }
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Dikky Rahmad Shafara</h5>
-                                                <h5>SMPN X Malang</h5>
+                                                <h5>SMPN 18 Malang</h5>
                                                 <h6>MOBA CUP 2017</h6>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="item">
-                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-header">
+                                            <div className="avatar">
+                                            <img src={require("../../assets/img/arya.jpeg")} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="box-body">
+                                            <div className="body-content">
+                                            {this.state.testiArya ? <p className="text-justify">{arya} <span className="text-oren clickable" onClick={() => this.aryaHandler()}>less</span></p> : <p className="text-justify">{arya.slice(0, 500)} ... <span className="text-oren clickable" onClick={() => this.aryaHandler()}>more</span></p> }
+                                            </div>
+                                            <div className="profil text-center text-capitalize">
+                                                <h5>Arya Erlangga Fasa</h5>
+                                                <h5>SMPN 3 Lumajang</h5>
+                                                <h6>MOBA CUP 2017</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="item">
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
@@ -330,7 +368,13 @@ export class LandingPage extends Component {
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                            <p className="text-center">Sa du ti teamworkkk.</p>
+                                            <p className="text-justify">Saya peserta Moba 2017 mewakili team SMP 5 Malang, team saya saat itu tidak juara tapi saya jadi nominasi favorite player, berkat MOBA saya juga mantap masuk Moklet (Telkom) Malang.
+
+Alhamdulilah saya di rekomendasikan oleh Panitia MOBA dan bisa diterima di Moklet Ngalam.
+
+Saya Bahagia bisa menjadi bagian dari SMK Telkom Malang, bukan hanya punya teman-teman baru tapi juga mendapatkan kekeluargaan yang seru. 
+
+Disini Saya bergabung dengan tim Basket TSBC dan berharap tim kami bisa menjadi juara DBL</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Fareladzin Wibi Ramadhan</h5>
@@ -339,30 +383,6 @@ export class LandingPage extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="item">
-                                <div className="col-md-12">
-                                    <div className="box-image">
-                                        <div className="box-header">
-                                            <div className="avatar">
-                                            <img src={require("../../assets/img/wibi.jpeg")} alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="box-body">
-                                            <div className="body-content">
-                                            <p className="text-center">Sa du ti teamworkkk.</p>
-                                            </div>
-                                            <div className="profil text-center text-capitalize">
-                                                <h5>Arya Erlangga Fasa</h5>
-                                                <h5>SMPN X Lumajang</h5>
-                                                <h6>MOBA CUP 2017</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -390,7 +410,7 @@ export class LandingPage extends Component {
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">MOBA CUP adalah ajang turnamen bola basket SMP/SMPK/MI dan sederajatnya.
+                                                <p className="text-justify">MOBA CUP adalah ajang turnamen bola basket SMP dan sederajatnya.
 Saya salah satu panitia MOBA CUP sebelumnya merasa sangat senang dan bangga bahwa kami (panitia dan keluarga besar SMK TELKOM MALANG) bisa menampung bakat minat para pemain basket tingkat SMP dan sederajatnya. 
 
 Sangat hebat dan keren
@@ -418,7 +438,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">TSBC bagi saya bukan hanya sekadar organisasi basket, lebih dari itu TSBC adalah rumah dimana saya membentuk karakter. Kekeluargaan yang baik didukung dengan coach yang super greget membuat TSBC sangat berkesan bagi saya. Saya sangat beruntung pernah menjadi bagian dari TSBC dan Telkom School malang, rumah yang selalu membuat saya ingin kembali.</p>
+                                                <p className="text-justify">TSBC bagi saya bukan hanya sekadar organisasi basket, lebih dari itu TSBC adalah rumah dimana saya membentuk karakter. Kekeluargaan yang baik didukung dengan coach yang super greget membuat TSBC sangat berkesan bagi saya. Saya sangat beruntung pernah menjadi bagian dari TSBC dan Telkom School malang, rumah yang selalu membuat saya ingin kembali.</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Dandy Purba Cantaka</h5>
@@ -441,7 +461,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">TSBC itu bagian dari keluarga saya.  Bukan hanya sekedar organisasi ekstrakulikuler,  TSBC merupakan tempat untuk membangun solidaritas,  kekompakan,  dan kekeluargaan. Harapan saya  untuk TSBC semoga semakin sukses membuat acara / event yang dapat menciptakan generasi handal dalam dunia basket.  Sa du ti teamworkkk.</p>
+                                                <p className="text-justify">TSBC itu bagian dari keluarga saya.  Bukan hanya sekedar organisasi ekstrakulikuler,  TSBC merupakan tempat untuk membangun solidaritas,  kekompakan,  dan kekeluargaan. Harapan saya  untuk TSBC semoga semakin sukses membuat acara / event yang dapat menciptakan generasi handal dalam dunia basket.  Sa du ti teamworkkk.</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Novi Kusumaningayu</h5>
@@ -464,7 +484,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Basket adalah sesuatu yang menurut saya nyaman di lakukan. Apalagi bisa bergabung dengan sub organisasi TSBC. Selain basket, kita bisa bersenang bersama2 dengan melakukan hal hal selain basket. Intinya TSBC itu bisa membuat masa masa muda menjadi lebih menarik dan bisa selalu di kenang.</p>
+                                                <p className="text-justify">Basket adalah sesuatu yang menurut saya nyaman di lakukan. Apalagi bisa bergabung dengan sub organisasi TSBC. Selain basket, kita bisa bersenang bersama2 dengan melakukan hal hal selain basket. Intinya TSBC itu bisa membuat masa masa muda menjadi lebih menarik dan bisa selalu di kenang.</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Nanda Setya Pramudya</h5>
@@ -487,7 +507,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Telkom Basketball Club atau biasa disebut TSBC sudah merupakan keluarga bagi saya. Basket juga merupakan salah satu hal yang saya senangi, apalagi didukung dengan adanya TSBC yang sudah saya anggap sebagai keluarga. TSBC nggak cuman mengajarkan teknik cara bermain basket, latian, ikut tournament, walaupun nggak terlalu jago basket kalian juga boleh ikut TSBC karena disini kita juga diajari cara organisasi yang baik dan kekeluargaan. The best offense is good defense</p>
+                                                <p className="text-justify">Telkom Basketball Club atau biasa disebut TSBC sudah merupakan keluarga bagi saya. Basket juga merupakan salah satu hal yang saya senangi, apalagi didukung dengan adanya TSBC yang sudah saya anggap sebagai keluarga. TSBC nggak cuman mengajarkan teknik cara bermain basket, latian, ikut tournament, walaupun nggak terlalu jago basket kalian juga boleh ikut TSBC karena disini kita juga diajari cara organisasi yang baik dan kekeluargaan. The best offense is good defense</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Arkhab Maulana</h5>
@@ -510,7 +530,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">SMK TELKOM dengan disiplin ATTITUDE IS EVERYTHING bener bener mendidik saya dlm hal bermasyarakat. Karna yg dibutuhkan tidak hanya otak yg cerdas tapi sikap yg benar dlm menghadapi dunia kerja nantinya. Last but not least, SPBC IS FAMILY! Buktinyaaa ya ini :D kami masih saling komunikasi,main bareng sampek sekarang.</p>
+                                                <p className="text-justify">SMK TELKOM dengan disiplin ATTITUDE IS EVERYTHING bener bener mendidik saya dlm hal bermasyarakat. Karna yg dibutuhkan tidak hanya otak yg cerdas tapi sikap yg benar dlm menghadapi dunia kerja nantinya. Last but not least, SPBC IS FAMILY! Buktinyaaa ya ini... kami masih saling komunikasi, main bareng sampek sekarang.</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Hanna Anie Sharlene Rayitno Soebari</h5>
@@ -533,7 +553,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Belajar di SMK Telkom Malang sangatlah menyenangkan apalagi kita disini mempelajari IT, yang mana sangatlah penting sekaligus berguna sekali bagi masa sekarang maupun masa depan, disini kita juga diajarkan apa makna kekeluargaan, seperti saat saya memutuskan untuk bergabung dengan TSBC, bukan hanya basket saja yang kami lakukan, tetapi pentingnya akan kekeluargaan pun kita terapkan juga seperti kita melakukan jumat sedekah yang mana nantinya akan disalurkan ke panti asuhan, kita pun juga menyumbang qurban yang mana kita turut turun ke masyarakat dan membagikan daging qurban tersebut. Meskipun background kita  adalah basket bukan berarti yang tidak bisa basket tidak boleh bergabung, TSBC terbuka untuk siapapun. SADUTI TEAMWORK!!</p>
+                                                <p className="text-justify">Belajar di SMK Telkom Malang sangatlah menyenangkan apalagi kita disini mempelajari IT, yang mana sangatlah penting sekaligus berguna sekali bagi masa sekarang maupun masa depan, disini kita juga diajarkan apa makna kekeluargaan, seperti saat saya memutuskan untuk bergabung dengan TSBC, bukan hanya basket saja yang kami lakukan, tetapi pentingnya akan kekeluargaan pun kita terapkan juga seperti kita melakukan jumat sedekah yang mana nantinya akan disalurkan ke panti asuhan, kita pun juga menyumbang qurban yang mana kita turut turun ke masyarakat dan membagikan daging qurban tersebut. Meskipun background kita  adalah basket bukan berarti yang tidak bisa basket tidak boleh bergabung, TSBC terbuka untuk siapapun. SADUTI TEAMWORK!!</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Chofifah Rahmatullaili Setiawati</h5>
@@ -556,7 +576,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center"><br/>Sekolah di SMK Telkom punya banyak keuntungan. Terutama bagi kamu yang dari luar kota sehingga bisa belajar hidup mandiri dan explore segala hal. Jangan cuma belajar formal tapi ikut juga kegiatan non formal. Basket salah satunya jadi organisasi favorit di moklet<br/></p>
+                                                <p className="text-justify"><br/>Sekolah di SMK Telkom punya banyak keuntungan. Terutama bagi kamu yang dari luar kota sehingga bisa belajar hidup mandiri dan explore segala hal. Jangan cuma belajar formal tapi ikut juga kegiatan non formal. Basket salah satunya jadi organisasi favorit di moklet<br/></p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>jody baharizki</h5>
@@ -579,7 +599,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Saya sangat senang dan bangga menjadi lulusan dari SMK TELKOM. Salah satu alasan saya sangat senang berada di sekolah ini adalah , bergabungnya saya dengan tim basket di sekolah atau yg mempunyai nama TSBC. Saya suka dengan pertemanan dan kekompakan kami didalam TSBC ini. Berkat TSBC saya mendapat teman yang banyak, dan juga easy going. Satu lagi yang saya sangat suka adalah kekeluargaan di TSBC ini sangat erat. Pokoknya saya sangat beruntung bisa bergabung dengan TSBC dan menjadi alumni dari sekolah ini. Semoga di tahun tahun berikutnya lebih banyak lagi adik adik yang masuk SMK TELKOM dan TSBC . dijamin masa SMAnya lebih UNFORGETABLE!!!</p>
+                                                <p className="text-justify">Saya sangat senang dan bangga menjadi lulusan dari SMK TELKOM. Salah satu alasan saya sangat senang berada di sekolah ini adalah , bergabungnya saya dengan tim basket di sekolah atau yg mempunyai nama TSBC. Saya suka dengan pertemanan dan kekompakan kami didalam TSBC ini. Berkat TSBC saya mendapat teman yang banyak, dan juga easy going. Satu lagi yang saya sangat suka adalah kekeluargaan di TSBC ini sangat erat. Pokoknya saya sangat beruntung bisa bergabung dengan TSBC dan menjadi alumni dari sekolah ini. Semoga di tahun tahun berikutnya lebih banyak lagi adik adik yang masuk SMK TELKOM dan TSBC . dijamin masa SMAnya lebih UNFORGETABLE!!!</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>ANGGI LISDAYANTI</h5>
@@ -602,7 +622,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Sekolah ini yang mengajarkan apa artinya disiplin, menghargai waktu, yang pasti untuk menjadi orang sukses. Dan sub organ TSBC yang mengajarkan tidak ada teman, senior ataupun junior, disini semuanya saudara, semuanya keluarga, tanpa ada perbedaan. Silahkan bagi kalian yang ingin mencari pengalaman baru, keluarga baru, dan yang pasti ingin sukses disini adalah jembatan nya.</p>
+                                                <p className="text-justify">Sekolah ini yang mengajarkan apa artinya disiplin, menghargai waktu, yang pasti untuk menjadi orang sukses. Dan sub organ TSBC yang mengajarkan tidak ada teman, senior ataupun junior, disini semuanya saudara, semuanya keluarga, tanpa ada perbedaan. Silahkan bagi kalian yang ingin mencari pengalaman baru, keluarga baru, dan yang pasti ingin sukses disini adalah jembatan nya.</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Muhamad Miftahul Iqbal Albana</h5>
@@ -625,7 +645,7 @@ SUKSES TERUS MOBA CUP 2K18</p>
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Terima kasih saya ucapkan kepada SMK Telkom Malang karena sudah mengajarkan keterampilan akademis dan non akademis serta soft skill yang sangat berguna dalam melanjutkan ke jenjang berikutnya. Disamping itu, teman-teman dari berbagai daerah serta ikatan alumni Wikusama sangat berperan penting setelah lulus dari SMK Telkom Malang.
+                                                <p className="text-justify">Terima kasih saya ucapkan kepada SMK Telkom Malang karena sudah mengajarkan keterampilan akademis dan non akademis serta soft skill yang sangat berguna dalam melanjutkan ke jenjang berikutnya. Disamping itu, teman-teman dari berbagai daerah serta ikatan alumni Wikusama sangat berperan penting setelah lulus dari SMK Telkom Malang.
 Pengalaman menjadi bagian dari SPBC atau yang sekarang lebih dikenal dengan TSBC adalah kekeluargaan yang sangat erat di dalam maupun di luar lapangan. Disamping materi latihan yang diberikan oleh pelatih, kami juga saling berbagi pengalaman dalam bermain basket, karena siswa SMK Telkom Malang banyak yang berasal dari berbagai daerah di seluruh Indonesia yang tentunya memiliki karakternya masing-masing. Beberapa hal tersebut menjadi nilai tambah jika menjadi siswa SMK Telkom Malang yang mungkin belum tentu kita dapatkan di tempat lain. Salam, 1 2 3 Teamwork!</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
@@ -649,7 +669,7 @@ Pengalaman menjadi bagian dari SPBC atau yang sekarang lebih dikenal dengan TSBC
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Kita diajarkan untuk menjadi pribadi yang solid, speed, smart yg d bangun dalam TSBC, selama di TSBC tidak hanya d ajarkan untuk menjadi seorang atlit basket, kita d ajarkan untung membangun dan belajar berorganisasi, dalam TSBC kekeluargaan di utamakan untuk menjadikan team yg kuat.</p>
+                                                <p className="text-justify">Kita diajarkan untuk menjadi pribadi yang solid, speed, smart yg d bangun dalam TSBC, selama di TSBC tidak hanya d ajarkan untuk menjadi seorang atlit basket, kita d ajarkan untung membangun dan belajar berorganisasi, dalam TSBC kekeluargaan di utamakan untuk menjadikan team yg kuat.</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Rochmawati Aprilia</h5>
@@ -672,7 +692,7 @@ Pengalaman menjadi bagian dari SPBC atau yang sekarang lebih dikenal dengan TSBC
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Disini saya bisa punya teman yang berasal dari luar kota bahkan luar pulau. Tidak hanya 3 tahun saat saya masih bersekolah, ikatan antar alumni sangatlah kuat. Meskipun kami terpisahkan jarak tapi kami masih erat dalam menjalin silaturahmi satu sama lain, itulah nilai plus yang saya banggakan. TSBC punya banyak kenangan, perjuangan dan kebanggaan tersendiri bagi saya. Tidak hanya latihan rutin, banyak kegiatann positif yang bisa ikuti contohnya acara bakti sosial, TSBC berkurban dan masih banyak lagi. So, kami nantikan kalian bergabung dengan ikatan keluarga SMK Telkom Malang dan jika kalian punya hobi basket jangan lupa untuk daftar TSBC ya</p>
+                                                <p className="text-justify">Disini saya bisa punya teman yang berasal dari luar kota bahkan luar pulau. Tidak hanya 3 tahun saat saya masih bersekolah, ikatan antar alumni sangatlah kuat. Meskipun kami terpisahkan jarak tapi kami masih erat dalam menjalin silaturahmi satu sama lain, itulah nilai plus yang saya banggakan. TSBC punya banyak kenangan, perjuangan dan kebanggaan tersendiri bagi saya. Tidak hanya latihan rutin, banyak kegiatann positif yang bisa ikuti contohnya acara bakti sosial, TSBC berkurban dan masih banyak lagi. So, kami nantikan kalian bergabung dengan ikatan keluarga SMK Telkom Malang dan jika kalian punya hobi basket jangan lupa untuk daftar TSBC ya</p>
                                             </div>
                                             <div className="profil text-center text-capitalize">
                                                 <h5>Dian Nofika Prasetya Amanda</h5>
@@ -695,7 +715,7 @@ Pengalaman menjadi bagian dari SPBC atau yang sekarang lebih dikenal dengan TSBC
                                         </div>
                                         <div className="box-body">
                                             <div className="body-content">
-                                                <p className="text-center">Menjadi bagian dari SMK Telkom Malang merupakan sebuah kebahagiaan bagi saya. disini saya diajarkan bukan hanya akademik, tapi juga non-akademik. Tidak salah bila ""Attitude Is Everything"" menjadi slogan bagi kami. Bukan hanya cerdas tapi kami juga dituntut untuk memiliki akhlak yang baik di kehidupan sehari-hari.
+                                                <p className="text-justify">Menjadi bagian dari SMK Telkom Malang merupakan sebuah kebahagiaan bagi saya. disini saya diajarkan bukan hanya akademik, tapi juga non-akademik. Tidak salah bila ""Attitude Is Everything"" menjadi slogan bagi kami. Bukan hanya cerdas tapi kami juga dituntut untuk memiliki akhlak yang baik di kehidupan sehari-hari.
 
 Di SMK Telkom saya bergabung dalam TSBC (Telkom School Basketball Club). Disini saya diajarkan bukan hanya basket, tapi juga bagaimana kita berorganisasi, berwirausaha, kegiatan sosial, dll. Banyak kenangan yang tidak dapat dilupakan terjadi di TSBC. Cocok banget buat orang yang hobi basket, tapi juga pingin punya pengalaman berorganisasi. I love basketball, but i love TSBC for the most.
 

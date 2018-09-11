@@ -606,6 +606,10 @@ bottom .register {
     color : #faa823;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .navbar-dashboard{
     padding: 0 !important;
 }
