@@ -321,7 +321,7 @@ export class LandingPage extends Component {
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
-                                            <img src={require("../../assets/img/diky.jpeg")} alt="" />
+                                            <img src={require("../../assets/img/diky.png")} alt="" />
                                             </div>
                                         </div>
                                         <div className="box-body">
@@ -363,7 +363,7 @@ export class LandingPage extends Component {
                                     <div className="box-image">
                                         <div className="box-header">
                                             <div className="avatar">
-                                            <img src={require("../../assets/img/wibi.jpeg")} alt="" />
+                                            <img src={require("../../assets/img/wibi.png")} alt="" />
                                             </div>
                                         </div>
                                         <div className="box-body">
