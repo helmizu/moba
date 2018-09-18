@@ -145,8 +145,8 @@ export class LandingPage extends Component {
                                             <br/>
                                             <br/>
                                             <h6 className="text-center txt-grey">Uang Pembinaan</h6>
-                                            <h6 className="text-center txt-grey">Sertifikat</h6>
-                                            <h6 className="text-center txt-grey">Piala</h6>
+                                            <h6 className="text-center txt-grey">Sertifikat&nbsp;&nbsp;</h6>
+                                            <h6 className="text-center txt-grey">Piala &nbsp;&nbsp;</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ export class LandingPage extends Component {
                                     <div className="col-md-8">
                                         <div className="timeline_single">
                                             <h6>Penutupan pendaftaran</h6>
-                                            <h6 className="txt-grey h6">30 September 2018</h6>
+                                            <h6 className="txt-grey h6">5 Oktober 2018</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -183,8 +183,19 @@ export class LandingPage extends Component {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="timeline_single">
-                                            <h6>Pertandingan Grup</h6>
-                                            <h6 className="txt-grey h6">XX XXXXXX 2018</h6>
+                                            <h6>Babak Penyisihan</h6>
+                                            <h6 className="txt-grey h6">21, 27, 28 Oktober dan 10 November 2018</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row timeline_item">
+                                    <div className="col-md-4 text-center">
+                                        <div className="timeline_item_icon text-center"></div>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <div className="timeline_single">
+                                            <h6>Pertandingan Semifinal</h6>
+                                            <h6 className="txt-grey h6">11 November 2018</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +206,7 @@ export class LandingPage extends Component {
                                     <div className="col-md-8">
                                         <div className="timeline_single">
                                             <h6>Pertandingan Final</h6>
-                                            <h6 className="txt-grey h6">XX XXXXXX 2018</h6>
+                                            <h6 className="txt-grey h6">17 November 2018</h6>
                                         </div>
                                     </div>
                                 </div>

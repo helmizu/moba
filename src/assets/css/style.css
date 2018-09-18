@@ -242,7 +242,7 @@ nav.landing a:hover{
 
 .timeline {
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .timeline_single {
@@ -273,10 +273,10 @@ nav.landing a:hover{
 .timeline::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 15%;
     right: auto;
     left: 25%;
-    height: 85%;
+    height: 75%;
     width: 4px;
     background: #f8be37;
 }
@@ -970,6 +970,7 @@ bottom .register {
     }
     .timeline::before {
         left: 50%;
+        top : 10%;
     }
     .timeline_item_icon {
         margin-left: 46%;
