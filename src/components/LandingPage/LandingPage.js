@@ -757,7 +757,11 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                     </div>
                     <div className="container">
                         <div className="col-md-12 text-center m-t-40">
-                            <img src={require("../../assets/img/tsbc.png")} alt=""/>
+                            <div className="row">
+                                <div className="col-md-4"><img height="125px" src={require("../../assets/img/pocari_sweat.png")} alt=""/></div>
+                                <div className="col-md-4"><img height="125px" src={require("../../assets/img/tsbc.png")} alt=""/></div>
+                                <div className="col-md-4"><img height="125px" src={require("../../assets/img/lapis_malang.png")} alt=""/></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -772,14 +776,13 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                     <div className="row">
                             <div className="col-md-4 footer-sekolah text-center">
                                 <h4>SMK TELKOM MALANG</h4>
-                                <h6>Jl. Danau Ranau Sawojajar Malang 65139</h6>
+                                <h6>Jl. Danau Ranau, Sawojajar, Malang 65139</h6>
                                 <h6>www.smktelkom-mlg.sch.id</h6>
                             </div>
                             <div className=" col-md-4 footer-telepon text-center">
                                 <h4>Hubungi Kami</h4>
-                                <h6>085 100 188 805 (Heny)</h6>
-                                <h6>085 101 656 160 (Riya)</h6>
-                                <h6>085 103 656 277 (Nia)</h6>
+                                <h6>085 100 188 805 - Heny</h6>
+                                <h6>085 103 656 277 - Nia&nbsp;&nbsp;&nbsp;</h6>
                             </div>
                             <div className=" col-md-4 footer-telepon text-center">
                                 <h4>Info Lebih Lanjut</h4>
