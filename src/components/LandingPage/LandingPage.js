@@ -147,7 +147,8 @@ export class LandingPage extends Component {
                                             <h6 className="text-center txt-grey">Uang Pembinaan</h6>
                                             <h6 className="text-center txt-grey">Sertifikat&nbsp;&nbsp;</h6>
                                             <h6 className="text-center txt-grey">Piala &nbsp;&nbsp;</h6>
-                                        </div>
+                                            <h5 className="text-center text-oren">Total Hadiah<br/>Rp 17.000.000</h5>
+					</div>
                                     </div>
                                 </div>
                             </div>
