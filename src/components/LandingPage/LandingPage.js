@@ -761,7 +761,7 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/pocari_sweat.png")} alt="pocari sweat"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/lapis_malang.png")} alt="lapis malang"/></div>
-                                <div className="py-5 col-md-6"><img height="125px" src={require("../../assets/img/indihome.png")} alt="telkom akses"/></div>
+                                <div className="py-5 col-md-6"><img height="85px" src={require("../../assets/img/indihome.png")} alt="telkom akses"/></div>
                                 <div className="py-5 col-md-6"><img height="125px" src={require("../../assets/img/milo.png")} alt="milo"/></div>
                             </div>
                         </div>
