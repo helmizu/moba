@@ -777,21 +777,24 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                         <div className="col-md-6 gradient-footer"></div>
                     </div>
                     <div className="row">
-                            <div className="col-md-4 footer-sekolah text-center">
-                                <h4>SMK TELKOM MALANG</h4>
-                                <h6>Jl. Danau Ranau, Sawojajar, Malang 65139</h6>
-                                <h6>www.smktelkom-mlg.sch.id</h6>
-                            </div>
-                            <div className=" col-md-4 footer-telepon text-center">
-                                <h4>Hubungi Kami</h4>
-                                <h6>085 100 188 805 - Heny</h6>
-                                <h6>085 103 656 277 - Nia&nbsp;&nbsp;&nbsp;</h6>
-                            </div>
-                            <div className=" col-md-4 footer-telepon text-center">
-                                <h4>Info Lebih Lanjut</h4>
-                                <h6><i class="fas fa-envelope"></i> mobacup@gmail.com</h6>
-                                <h6><i class="fab fa-instagram"></i> @mobacup</h6>
-                            </div>
+                        <div className="col-md-4 footer-sekolah text-center">
+                            <h4>SMK TELKOM MALANG</h4>
+                            <h6>Jl. Danau Ranau, Sawojajar, Malang 65139</h6>
+                            <h6>www.smktelkom-mlg.sch.id</h6>
+                        </div>
+                        <div className=" col-md-4 footer-telepon text-center">
+                            <h4>Hubungi Kami</h4>
+                            <h6>085 100 188 805 - Heny</h6>
+                            <h6>085 103 656 277 - Nia&nbsp;&nbsp;&nbsp;</h6>
+                        </div>
+                        <div className=" col-md-4 footer-telepon text-center">
+                            <h4>Info Lebih Lanjut</h4>
+                            <h6><i class="fas fa-envelope"></i> mobacup@gmail.com</h6>
+                            <h6><i class="fab fa-instagram"></i> @mobacup</h6>
+                        </div>    
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12 text-muted text-right"><small>Created by GALAPAGOS</small></div>
                     </div>
                 </div>
             </div>
