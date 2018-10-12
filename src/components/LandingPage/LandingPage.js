@@ -764,6 +764,9 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                                 <div className="py-5 col-md-4"><img height="85px" src={require("../../assets/img/telkomsel.png")} alt="telkom akses"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/lapis_malang.png")} alt="lapis malang"/></div>
+                                <div className="py-5 col-md-4">{/* <img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/> */}</div>
+                                <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/litstaff.png")} alt="tsbc"/></div>
+                                <div className="py-5 col-md-4">{/* <img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/> */}</div>
                             </div>
                         </div>
                     </div>
@@ -790,8 +793,8 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                         </div>
                         <div className=" col-md-4 footer-telepon text-center">
                             <h3>Sosial Media</h3>
-                            <a href="https://www.instagram.com/mobacup/" target="_blank"><h5><i class="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
                             <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank"><h5><i class="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h5></a>
+                            <a href="https://www.instagram.com/mobacup/" target="_blank"><h5><i class="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
                         </div>    
                     </div>
                     <div className="row">
