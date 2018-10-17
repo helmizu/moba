@@ -25,16 +25,17 @@ export class Navbar extends Component {
             <div>
             <nav className="navbar navbar-expand-lg navbar team">
             <Link className="navbar-brand" to="/"><img src={require("../../assets/img/ts-2.png")} width="15%" alt="telkom"/></Link>
-            <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
-            </li>
+            <ul className="navbar-nav ml-auto">{ isLogedIn ? (
+                <li className="nav-item">
+                    <Link className="nav-link" to="/">Home</Link>
+                </li>
+            ) : '' }
             {/* <li className="nav-item">
                 <Link className="nav-link" to="/team">Team</Link>
             </li> */}
             { isLogedIn ? (
                 <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                    <Link className="nav-link" to="/dashboard">Dashboard</Link>
                 </li>
             ) : '' }
             <li className="nav-item">

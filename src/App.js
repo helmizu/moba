@@ -9,6 +9,8 @@ import Team from './components/LandingPage/Team'
 import Dashboard from './components/Dashboard/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 import Daftar from './components/Daftar/Daftar';
+import Daftar3 from './components/3on3/Daftar';
+import Dashboard3 from './components/3on3/Dashboard';
 import Login from './components/Login/Login';
 import { setCurrentUser, logoutUser } from './actions/globalAction';
 import jwt_decode from 'jwt-decode';
@@ -30,10 +32,14 @@ class App extends Component {
           <div>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/team" component={Team} />
-            <Route exact path="/daftar" component={Daftar} />
+            <Route exact path="/daftar-5x5" component={Daftar} />
+            <Route exact path="/daftar-3x3" component={Daftar3} />
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute path="/dashboard" component={Dashboard} />
+            </Switch>
+            <Switch>
+              <PrivateRoute path="/dashboard-3x3" component={Dashboard3} />
             </Switch>
           </div>
         </Router>

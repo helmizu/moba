@@ -74,7 +74,7 @@ class Step extends Component {
                             <h3 className="box-title">Langkah 4</h3>
                             <ul className="list-inline two-part">
                                 <li className="title">
-                                    <span>Menunggu Verifikasi</span>
+                                    <span>Verifikasi Admin</span>
                                 </li>
                                 {stepFour()}
                             </ul>

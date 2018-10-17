@@ -102,7 +102,8 @@ export class LandingPage extends Component {
                     </div>
                     <div className="row justify-content-md-center">
                         <div className="col-md-12 text-center">
-                            <Link to="/daftar" className="btn btn-daftar text-light">Daftar</Link>
+                            <Link to="/daftar-5x5" className="mx-2 btn btn-daftar text-light">Daftar 5x5</Link>
+                            <Link to="/daftar-3x3" className="mx-2 btn btn-daftar-inverse text-light">Daftar 3x3</Link>
                         </div>
                     </div>
                 </div>
@@ -148,7 +149,7 @@ export class LandingPage extends Component {
                                             <h6 className="text-center txt-grey">Sertifikat&nbsp;&nbsp;</h6>
                                             <h6 className="text-center txt-grey">Piala &nbsp;&nbsp;</h6>
                                             <h5 className="text-center text-oren">Total Hadiah<br/>Rp 17.000.000</h5>
-					</div>
+					                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -212,6 +213,39 @@ export class LandingPage extends Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="section3">
+                <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" alt="motif" />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4 className="text-center brandon testimoni">Sekolah Pendaftar</h4>
+                        </div>
+                    </div>
+                    <div className="row pt-5">
+                        <div className="col-md-6 px-5">
+                            <h5>Kota Malang</h5>
+                            <ul className="list-unstyled">
+                                <li>1. SMPN 1 MALANG</li>
+                                <li>2. SMPN 5 MALANG</li>
+                                <li>3. SMPN 14 MALANG</li>
+                                <li>4. SMPN 21 MALANG</li>
+                                <li>5. MTsN 1 MALANG</li>
+                                <li>6. SMPK Mardiwiyata</li>
+                            </ul>
+                        </div>
+                        <div className="col-md-6 px-5">
+                            <h5>Luar Kota Malang</h5>
+                            <ul className="list-unstyled">
+                                <li>1. SMPN 1 TUMPANG</li>
+                                <li>2. SMPN 1 TUREN</li>
+                                <li>3. SMPN 2 TULUNGAGUNG</li>
+                                <li>4. SMPN 1 BLITAR</li>
+                                <li>5. SMPK YOS SUDARSO</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -793,8 +827,8 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                         </div>
                         <div className=" col-md-4 footer-telepon text-center">
                             <h3>Sosial Media</h3>
-                            <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank"><h5><i class="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h5></a>
-                            <a href="https://www.instagram.com/mobacup/" target="_blank"><h5><i class="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
+                            <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank" rel="noopener noreferrer"><h5><i class="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h5></a>
+                            <a href="https://www.instagram.com/mobacup/" target="_blank" rel="noopener noreferrer"><h5><i class="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
                         </div>    
                     </div>
                     <div className="row">
