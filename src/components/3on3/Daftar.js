@@ -64,7 +64,7 @@ export class Daftar extends Component {
             <div className="col-md-12 centered">
             <div className="box-daftar">
             <h1>DAFTAR</h1>
-            <p>Isi data kamu di bawah dengan lengkap.</p>
+            <p>Form Pendaftaran Basket 3 x 3</p>
             <div className="form-group">
             <form onSubmit={this.onSubmit}>
             <div className="input-group">

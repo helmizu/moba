@@ -59,7 +59,7 @@ export class LandingPage extends Component {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light landing">
-                <Link className="navbar-brand" to="/"><img src={require("../../assets/img/ts-2.png")} width="15%" alt="telkom school" /></Link>   
+                <Link className="navbar-brand" to="/"><img src={require("../../assets/img/logo_ypts.png")} width="15%" alt="telkom school" /></Link>   
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Home</Link>
@@ -131,7 +131,6 @@ export class LandingPage extends Component {
                     </div>
                 </div>
             </div>
-
             <div className="section2">
                 <img src={require("../../assets/img/motif2.png")} className="img-fluid motif2" alt="motif" />
                 <div className="container">
@@ -163,19 +162,8 @@ export class LandingPage extends Component {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="timeline_single">
-                                            <h6>Pembukaan pendaftaran</h6>
-                                            <h6 className="txt-grey h6">8 September 2018</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row timeline_item">
-                                    <div className="col-md-4 text-center">
-                                        <div className="timeline_item_icon text-center"></div>
-                                    </div>
-                                    <div className="col-md-8">
-                                        <div className="timeline_single">
-                                            <h6>Penutupan pendaftaran</h6>
-                                            <h6 className="txt-grey h6">5 Oktober 2018</h6>
+                                            <h6>Pendaftaran</h6>
+                                            <h6 className="txt-grey h6">8 September - 5 Oktober 2018</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -222,30 +210,38 @@ export class LandingPage extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="text-center brandon testimoni">Sekolah Pendaftar</h4>
+                            <h4 className="text-center brandon testimoni">Pendaftar Mobacup 2018</h4>
                         </div>
                     </div>
-                    <div className="row pt-5">
+                    <div className="row pt-5 text-center">
                         <div className="col-md-6 px-5">
-                            <h5>Kota Malang</h5>
-                            <ul className="list-unstyled">
-                                <li>1. SMPN 1 MALANG</li>
-                                <li>2. SMPN 5 MALANG</li>
-                                <li>3. SMPN 14 MALANG</li>
-                                <li>4. SMPN 21 MALANG</li>
-                                <li>5. MTsN 1 MALANG</li>
-                                <li>6. SMPK Mardiwiyata</li>
-                            </ul>
+                            <h5 className="font-bold pb-3">Kota Malang</h5>
+                            <div className="card" style={{height: "200px", boxShadow:"0 3px 8px 0 rgba(0, 0, 0, .16)"}}>
+                                <div className="card-body">
+                                    <ul className="list-unstyled">
+                                        <li>SMPN 1 MALANG</li>
+                                        <li>SMPN 5 MALANG</li>
+                                        <li>SMPN 14 MALANG</li>
+                                        <li>SMPN 21 MALANG</li>
+                                        <li>MTsN 1 MALANG</li>
+                                        <li>SMPK Mardiwiyata</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-6 px-5">
-                            <h5>Luar Kota Malang</h5>
-                            <ul className="list-unstyled">
-                                <li>1. SMPN 1 TUMPANG</li>
-                                <li>2. SMPN 1 TUREN</li>
-                                <li>3. SMPN 2 TULUNGAGUNG</li>
-                                <li>4. SMPN 1 BLITAR</li>
-                                <li>5. SMPK YOS SUDARSO</li>
-                            </ul>
+                            <h5 className="font-bold pb-3">Luar Kota Malang</h5>
+                            <div className="card" style={{height: "200px", boxShadow:"0 3px 8px 0 rgba(0, 0, 0, .16)"}}>
+                                <div className="card-body">
+                                    <ul className="list-unstyled">
+                                      <li>SMPN 1 TUMPANG</li>
+                                      <li>SMPN 1 TUREN</li>
+                                      <li>SMPN 2 TULUNGAGUNG</li>
+                                      <li>SMPN 1 BLITAR</li>
+                                      <li>SMPK YOS SUDARSO</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -445,6 +441,29 @@ Disini Saya bergabung dengan tim Basket TSBC dan berharap tim kami bisa menjadi 
                     </div>
                     <div className="">
                     <Slider {...settings}>
+                    <div className="col-md-12">
+                            <div className="item">
+                                <div className="col-md-12">
+                                    <div className="box-image">
+                                        <div className="box-header">
+                                            <div className="avatar">
+                                                <img src={require("../../assets/img/alumni/zidhan.jpeg")} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="box-body">
+                                            <div className="body-content">
+                                                <p className="text-justify">Saya sangat bangga bisa menjadi bagian dari SMK Telkom dan bergabung dengan TSBC. Disini banyak hal lain yang saya dapat selain basket terutama saat saya menjadi bagian dari suksesnya event MOBA Cup. Hal terbesar yang saya dapatkan yaitu kekeluargaan yang ada disini. Saya berharap agar kedepannya rasa kekeluargaan itu semakin meningkat dan membuat TSBC semakin kompak serta kedepannya event MOBA Cup semakin dikenal dan menjadi event berkelas.</p>
+                                            </div>
+                                            <div className="profil text-center text-capitalize">
+                                                <h5>Muhammad Hafidhan Basith</h5>
+                                                <h5>Politeknik Negeri Malang</h5>
+                                                <h6>Lulusan Tahun 2018</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-md-12">
                             <div className="item">
                                 <div className="col-md-12">
@@ -792,15 +811,15 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                     <div className="container">
                         <div className="col-md-12 text-center m-t-40">
                             <div className="row">
-                                <div className="py-5 col-md-4"><img height="85px" src={require("../../assets/img/indihome.png")} alt="telkom akses"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/milo.png")} alt="milo"/></div>
+                                <div className="py-5 col-md-4"><img height="85px" src={require("../../assets/img/indihome.png")} alt="telkom akses"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/pocari_sweat.png")} alt="pocari sweat"/></div>
                                 <div className="py-5 col-md-4"><img height="85px" src={require("../../assets/img/telkomsel.png")} alt="telkom akses"/></div>
+                                <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/litstaff.png")} alt="tsbc"/></div>
+                                <div className="py-5 col-md-4"><img height="85px" src={require("../../assets/img/binasugi.png")} alt="tsbc"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/></div>
                                 <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/lapis_malang.png")} alt="lapis malang"/></div>
-                                <div className="py-5 col-md-4">{/* <img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/> */}</div>
-                                <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/litstaff.png")} alt="tsbc"/></div>
-                                <div className="py-5 col-md-4">{/* <img height="125px" src={require("../../assets/img/tsbc.png")} alt="tsbc"/> */}</div>
+                                <div className="py-5 col-md-4"><img height="125px" src={require("../../assets/img/dorent.png")} alt="tsbc"/></div>
                             </div>
                         </div>
                     </div>
@@ -821,14 +840,14 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                         </div>
                         <div className=" col-md-4 footer-telepon text-center">
                             <h3>Hubungi Kami</h3>
-                            <h6><i class="far fa-envelope" style={{color:"red"}}></i> mobacup@gmail.com</h6>
-                            <h6><i class="fab fa-whatsapp" style={{color:"green"}}></i> 085 100 188 805 - Heny</h6>
-                            <h6><i class="fab fa-whatsapp" style={{color:"green"}}></i> 085 103 656 277 - Nia&nbsp;&nbsp;&nbsp;</h6>
+                            <h6><i className="far fa-envelope" style={{color:"red"}}></i> mobacup@gmail.com</h6>
+                            <h6><i className="fab fa-whatsapp" style={{color:"green"}}></i> 085 100 188 805 - Heny</h6>
+                            <h6><i className="fab fa-whatsapp" style={{color:"green"}}></i> 085 103 656 277 - Nia&nbsp;&nbsp;&nbsp;</h6>
                         </div>
                         <div className=" col-md-4 footer-telepon text-center">
                             <h3>Sosial Media</h3>
-                            <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank" rel="noopener noreferrer"><h5><i class="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h5></a>
-                            <a href="https://www.instagram.com/mobacup/" target="_blank" rel="noopener noreferrer"><h5><i class="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
+                            <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank" rel="noopener noreferrer"><h5><i className="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h5></a>
+                            <a href="https://www.instagram.com/mobacup/" target="_blank" rel="noopener noreferrer"><h5><i className="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
                         </div>    
                     </div>
                     <div className="row">
