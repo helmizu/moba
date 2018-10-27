@@ -31,7 +31,7 @@ class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/team" component={Team} />
+            <Route exact path="/pertandingan" component={Team} />
             <Route exact path="/daftar-5x5" component={Daftar} />
             <Route exact path="/daftar-3x3" component={Daftar3} />
             <Route exact path="/login" component={Login} />

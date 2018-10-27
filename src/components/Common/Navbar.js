@@ -30,9 +30,9 @@ export class Navbar extends Component {
                     <Link className="nav-link" to="/">Home</Link>
                 </li>
             ) }
-            {/* <li className="nav-item">
-                <Link className="nav-link" to="/team">Team</Link>
-            </li> */}
+            <li className="nav-item">
+                <Link className="nav-link" to="/pertandingan">Pertandingan</Link>
+            </li>
             { isLogedIn ? (
                 <li className="nav-item">
                     <Link className="nav-link" to="/dashboard">Dashboard</Link>
