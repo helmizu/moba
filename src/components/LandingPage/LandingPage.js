@@ -205,7 +205,7 @@ export class LandingPage extends Component {
                     </div>
                 </div>
             </div>
-            <div className="section3">
+        {/* <div className="section3">
                 <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" alt="motif" />
                 <div className="container">
                     <div className="row">
@@ -245,7 +245,7 @@ export class LandingPage extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="section4">
                 <img src={require("../../assets/img/motif3.png")} className="img-fluid motif3" alt="motif" />
                 <div className="container">
@@ -840,14 +840,14 @@ Come join us, we wait for you. SA DU TI TEAMWORK!!!!!!!</p>
                         </div>
                         <div className=" col-md-4 footer-telepon text-center">
                             <h3>Hubungi Kami</h3>
-                            <h6><i className="far fa-envelope" style={{color:"red"}}></i> mobacup@gmail.com</h6>
+                            <h6><i className="far fa-envelope" style={{color:"red"}}></i> moba@smktelkom-mlg.sch.id</h6>
                             <h6><i className="fab fa-whatsapp" style={{color:"green"}}></i> 085 100 188 805 - Heny</h6>
                             <h6><i className="fab fa-whatsapp" style={{color:"green"}}></i> 085 103 656 277 - Nia&nbsp;&nbsp;&nbsp;</h6>
                         </div>
                         <div className=" col-md-4 footer-telepon text-center">
                             <h3>Sosial Media</h3>
-                            <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank" rel="noopener noreferrer"><h5><i className="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h5></a>
-                            <a href="https://www.instagram.com/mobacup/" target="_blank" rel="noopener noreferrer"><h5><i className="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h5></a>
+                            <a href="https://www.youtube.com/channel/UCZm8rxdrFDpX_bjYapG_Mng" target="_blank" rel="noopener noreferrer"><h6><i className="fab fa-youtube" style={{color:"red"}}></i> Moklet Basketball Cup</h6></a>
+                            <a href="https://www.instagram.com/mobacup/" target="_blank" rel="noopener noreferrer"><h6><i className="fab fa-instagram" style={{color:"purple"}}></i> @mobacup</h6></a>
                         </div>    
                     </div>
                     <div className="row">
